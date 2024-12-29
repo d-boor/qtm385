@@ -1,0 +1,387 @@
+[
+  {
+    "objectID": "lectures/LICENSE.html",
+    "href": "lectures/LICENSE.html",
+    "title": "MIT License",
+    "section": "",
+    "text": "Copyright (c) 2024 Danilo Freire\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\nTHE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "LICENSE.html",
+    "href": "LICENSE.html",
+    "title": "MIT License",
+    "section": "",
+    "text": "Copyright (c) 2024 Danilo Freire\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\nTHE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "guides/LICENSE.html",
+    "href": "guides/LICENSE.html",
+    "title": "MIT License",
+    "section": "",
+    "text": "Copyright (c) 2024 Danilo Freire\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\nTHE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "guides/markdown.html",
+    "href": "guides/markdown.html",
+    "title": "Markdown Guide",
+    "section": "",
+    "text": "This guide is written in Markdown and uses the Quarto document format. Quarto is a powerful tool that allows you to write in Markdown and convert your document to a variety of formats, including PDF, HTML, and Word. You can use this template to write your PAP in Markdown and then convert it to a PDF for submission.\nFor you to use this template, you need to have R, Pandoc and Quarto installed on your computer. You can install Pandoc by following the instructions on the Pandoc website. To install the Quarto package, run the following command in R:\ninstall.packages(c(\"quarto\", \"rmarkdown\", \"tidyverse\"))\nYou also need to install a distribution on your computer to convert your Markdown document to a PDF. I recommend you install TinyTeX, a lightweight distribution of . You can install TinyTeX by running the following command in R:\ninstall.packages(\"tinytex\")\ntinytex::install_tinytex()\nFor those who prefer a more comprehensive distribution, you can install MiKTeX on Windows or MacTeX on macOS.\nFinally, you should also install the Libertine and Inconsolata fonts on your computer to use this template. You can download the Libertine font from the Linux Libertine website and the Inconsolata font from the Google Fonts website. However, you can use any other font you prefer by changing the fontfamily and monofont options in the YAML header of this document. More information on how to change the font in your document can be found in the Quarto documentation.\nYou can then use the Quarto package to convert your Markdown document to a PDF. To convert your document to a PDF, run the following command in R:\nquarto::quarto_render(\"pre-analysis-plan.qmd\", output_format = \"pdf\")\nThis command will convert your Markdown document to a PDF and save it in the same directory as your Markdown file."
+  },
+  {
+    "objectID": "guides/markdown.html#headings",
+    "href": "guides/markdown.html#headings",
+    "title": "Markdown Guide",
+    "section": "Headings",
+    "text": "Headings\nYou can create headings using the # symbol. For example, # Heading 1 creates a first-level heading, ## Heading 2 creates a second-level heading, and so on. You can create up to six levels of headings using the # symbol."
+  },
+  {
+    "objectID": "guides/markdown.html#lists",
+    "href": "guides/markdown.html#lists",
+    "title": "Markdown Guide",
+    "section": "Lists",
+    "text": "Lists\nTo create an ordered list with nested unordered sub-items in Quarto, you can write the following code:\n1. This is an ordered list.\n2. This is the second item in the ordered list.\n  - This is a sub-item in the unordered list.\n    - This is a sub-sub-item in the unordered list.\n\nThis is an ordered list.\nThis is the second item in the ordered list.\n\nThis is a sub-item in the unordered list.\n\nThis is a sub-sub-item in the unordered list.\n\n\n\nYou can also create unordered lists:\n- This is an unordered list.\n- This is the second item in the unordered list.\n    - This is a sub-item in the unordered list.\n\nThis is an unordered list.\nThis is the second item in the unordered list.\n\nThis is a sub-item in the unordered list."
+  },
+  {
+    "objectID": "guides/markdown.html#tables",
+    "href": "guides/markdown.html#tables",
+    "title": "Markdown Guide",
+    "section": "Tables",
+    "text": "Tables\nYou can create tables using the | symbol. For example:\nTable: Your Caption {#tbl-markdown}\n\n| A            | New              | Table          |\n|:-------------|:----------------:|---------------:|\n|left-aligned  |centre-aligned    |right-aligned   |\n|*italics*     |~~strikethrough~~ |**boldface**    |\n\n\n\nTable 1: Your Caption\n\n\n\n\n\nA\nNew\nTable\n\n\n\n\nleft-aligned\ncentre-aligned\nright-aligned\n\n\nitalics\nstrikethrough\nboldface\n\n\n\n\n\n\nThe : symbols in the second row of the table determine the alignment of the text in each column. You can use left, center, or right to align the text.\nTo use the kable and kableExtra packages in R for creating and customising tables, you first need to install these packages if you have not already. You can do this by running install.packages(\"knitr\") and install.packages(\"kableExtra) in R. Below is an example. Please check the pre-analysis-plan.qmd file for the code.\n\nlibrary(kableExtra)\ndf &lt;- mtcars[1:5, 1:6]\nkable(df, \"latex\", booktabs = T) %&gt;%\n  kable_styling(position = \"center\", font_size = 12) %&gt;%\n  add_header_above(c(\" \" = 1, \"Group 1\" = 2, \"Group 2\" = 2,\n                     \"Group 3\" = 1, \"Group 4\" = 1)) %&gt;%\n  add_header_above(c(\" \", \"Group 5\" = 4, \"Group 6\" = 2), bold = T) %&gt;%\n  footnote(general = \"Your comments go here.\")\n\n\n\nTable 2: A table created with kable and kableExtra.\n\n\n\n\n\n\n\n\n\nThis will create a table with the mtcars dataset from the datasets package in R. You can customise the table using the kableExtra package to add a caption, change the font size, and add headers above the columns. You can also add footnotes to the table using the footnote function."
+  },
+  {
+    "objectID": "guides/markdown.html#equations",
+    "href": "guides/markdown.html#equations",
+    "title": "Markdown Guide",
+    "section": "Equations",
+    "text": "Equations\nYou can create equations using the $$ symbol. For example in Equation 1, we have the formula for the standard deviation of a population:\n$$\n\\sigma = \\sqrt{\\frac{\\sum_{i=1}^{N} (x_i - \\mu)^2}{N}}\n$$ {#eq-stddev}\n\\[\n\\sigma = \\sqrt{\\frac{\\sum_{i=1}^{N} (x_i - \\mu)^2}{N}}\n\\tag{1}\\]\nYou can also create equations inline by using the $ symbol. For example, $\\alpha = \\beta + \\gamma$ will render as \\(\\alpha = \\beta + \\gamma\\). To learn more about how to write equations in using Markdown, you can refer to the Overleaf documentation."
+  },
+  {
+    "objectID": "guides/markdown.html#figures",
+    "href": "guides/markdown.html#figures",
+    "title": "Markdown Guide",
+    "section": "Figures",
+    "text": "Figures\nYou can include figures in your document using the ![Caption](path/to/image.png){#fig-label} syntax. For example:\n![This is a figure caption.](path/to/image.png){#fig-label}\nThis will include the image path/to/image.png in your document with the caption “This is a figure caption.” You can refer to the figure using the label fig-label.\nYou can also use the knitr package in R to create figures. This gives you more control over the appearance of the figure and allows you to include the code used to create the figure in your document. To include the same figure, you can use the following code:\n\nlibrary(knitr)\nknitr::include_graphics(\"path/to/image.png\")\n\nThere are many options you can use to customise the appearance of your figures, such as changing the width of the figure, adding a border, or changing the alignment. You can find more information on how to customise figures in the Quarto documentation."
+  },
+  {
+    "objectID": "guides/markdown.html#code-blocks-and-syntax-highlighting",
+    "href": "guides/markdown.html#code-blocks-and-syntax-highlighting",
+    "title": "Markdown Guide",
+    "section": "Code Blocks and Syntax Highlighting",
+    "text": "Code Blocks and Syntax Highlighting\nYou can include code blocks in your document using triple backticks (```). For example, if you would like to include an R code block in your document, you can write ```{r}, and close it with another set of triple backticks (```). You can also add chunk options to the code block to control the output of the code block with #|. For example:\n#| label: fig-airquality\n#| fig-cap: \"Temperature and ozone level.\"\n#| warning: false\n\nlibrary(ggplot2)\nggplot(airquality, aes(Temp, Ozone)) + \n  geom_point() + \n  geom_smooth(method = \"loess\", se = FALSE)\n\n\n\n\n\n\n\n\nFigure 1: Temperature and ozone level.\n\n\n\n\n\nQuarto will run the code in the code block and include the output in the final document, as you can see in Figure 1. To learn more about code cell options, you can refer to the Quarto documentation."
+  },
+  {
+    "objectID": "guides/markdown.html#citations",
+    "href": "guides/markdown.html#citations",
+    "title": "Markdown Guide",
+    "section": "Citations",
+    "text": "Citations\nYou can include citations in your document using the @ symbol followed by the citation key. For example, @freire2018evaluating will create a citation to the reference with the key freire2018evaluating. You can also include page numbers in your citation by writing @freire2018evaluating [10--15]. The result will be: @freire2018evaluating [10--15]. To include multiple citations in one bracket, you can write [@freire2018evaluating 10; @mignozzetti2022legislature 15]. This will create a citation like this: [@freire2018evaluating 10; @mignozzetti2022legislature 15].\nTo include a bibliography in your document, you need to create a .bib file with your references and include it in the YAML header of your document. As you can find in the YAML header of this document:\nbibliography: references.bib\nWhen searching for academic references, Google Scholar is an excellent tool for finding BibTeX citations. Here is a quick guide:\n\nSearch for your desired reference on Google Scholar\nLook for the “Cite” button below the reference\nClick on “Cite” and then select “BibTeX” from the options\nCopy the generated BibTeX citation\nPaste it into your .bib file\n\nThis method makes it easy to maintain consistent and accurate citations in your academic work. Plus, it saves you the hassle of manually formatting each reference."
+  },
+  {
+    "objectID": "guides/markdown.html#footnotes",
+    "href": "guides/markdown.html#footnotes",
+    "title": "Markdown Guide",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nThis is an inline footnote.↩︎\nYou can also include multiple paragraphs in a footnote by indenting the subsequent paragraphs.↩︎"
+  },
+  {
+    "objectID": "syllabus/LICENSE.html",
+    "href": "syllabus/LICENSE.html",
+    "title": "MIT License",
+    "section": "",
+    "text": "Copyright (c) 2024 Danilo Freire\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\nTHE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "assignments/LICENSE.html",
+    "href": "assignments/LICENSE.html",
+    "title": "MIT License",
+    "section": "",
+    "text": "Copyright (c) 2024 Danilo Freire\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\nTHE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "assignments/assignments.html",
+    "href": "assignments/assignments.html",
+    "title": "Assignments",
+    "section": "",
+    "text": "Here you will find information about the assignments for QTM 350. There are ten of them, each worth 5% of your final grade. The assignments are designed to help you practice the concepts covered in class and to develop your data science skills.\nAssignment submissions are typically due on Wednesdays at 11:59pm in the week following their publication. You may submit via Canvas (preferred) or email (danilo.freire@emory.edu).\nI encourage you to complete assignments in Quarto or Jupyter Notebooks and submit them in PDF format. You can also submit them as a Word document, provided that code and results are included in the same document.\nYou will find the questions in the assignments folder on the course repository. For your convenience, rendered versions are available on the course website; links are provided below.\nWhen submitting, please name your files as follows: assignment-01-your-name.pdf. For instance: assignment-01-john-doe.pdf."
+  },
+  {
+    "objectID": "assignments/assignments.html#assignment-timeline",
+    "href": "assignments/assignments.html#assignment-timeline",
+    "title": "Assignments",
+    "section": "Assignment Timeline",
+    "text": "Assignment Timeline\n\n\n\nSession\nTopic\nAssignment\nSubmission Deadline\n\n\n\n\n02\nComputational Literacy\nAssignment 01\n2024-09-11"
+  },
+  {
+    "objectID": "assignments/assignments.html#in-class-quizzes",
+    "href": "assignments/assignments.html#in-class-quizzes",
+    "title": "Assignments",
+    "section": "In-Class Quizzes",
+    "text": "In-Class Quizzes\nIn-class quizzes will be held on Wednesdays. They will be based on the material covered in the previous weeks. The quizzes will be open-book and open-notes, but you will not be allowed communicate with others during the quiz. They will also be available in the assignment folder on GitHub and on the course website.\n\nQuiz 01: https://github.com/danilofreire/qtm385-quiz01.\nQuiz 02: https://github.com/danilofreire/qtm385-quiz02.\nQuiz 03: https://github.com/danilofreire/qtm385-quiz03.\nQuiz 04: https://github.com/danilofreire/qtm385-quiz04.\nQuiz 05: https://github.com/danilofreire/qtm385-quiz05."
+  },
+  {
+    "objectID": "assignments/assignments.html#final-project",
+    "href": "assignments/assignments.html#final-project",
+    "title": "Assignments",
+    "section": "Final Project",
+    "text": "Final Project\nThe final project will be a group effort, with a maximum of 3 students per group. Detailed instructions are available on the GitHub repository: https://github.com/danilofreire/qtm350/tree/main/project."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "QTM 385 - Experimental Methods",
+    "section": "",
+    "text": "Welcome to QTM 385! This course…\nWe will meet every Monday and Wednesday from 14:30 to 15:45 in the Maths and Science Centre - E208."
+  },
+  {
+    "objectID": "index.html#contact-information",
+    "href": "index.html#contact-information",
+    "title": "QTM 385 - Experimental Methods",
+    "section": "Contact Information",
+    "text": "Contact Information\n\nName: Danilo Freire\nEmail: danilo.freire@emory.edu\nOffice Hours: By appointment at your convenience, please email me to schedule a meeting"
+  },
+  {
+    "objectID": "index.html#learning-outcomes",
+    "href": "index.html#learning-outcomes",
+    "title": "QTM 385 - Experimental Methods",
+    "section": "Learning Outcomes",
+    "text": "Learning Outcomes\nBy the end of this course, students will be able to:\n\nUse the command line interface to manage files and directories.\nWork with version control systems to track changes in code and collaborate with others.\nCreate reproducible reports and presentations.\nUse AI tools to assist with programming tasks.\nApply advanced techniques for data storage, manipulation, and querying.\nUnderstand the basics of containerisation and parallel computing."
+  },
+  {
+    "objectID": "index.html#website-structure",
+    "href": "index.html#website-structure",
+    "title": "QTM 385 - Experimental Methods",
+    "section": "Website Structure",
+    "text": "Website Structure\nThis website contains the course syllabus, lecture materials, tutorials, and assignments for the course. The course repository at https://github.com/danilofreire/qtm350 is similarly structured. Feel free to explore the materials and use them as needed."
+  },
+  {
+    "objectID": "index.html#getting-help",
+    "href": "index.html#getting-help",
+    "title": "QTM 385 - Experimental Methods",
+    "section": "Getting Help",
+    "text": "Getting Help\nIf you encounter any issues with the course materials or have questions about the content, please:\n\nCheck the course syllabus and this README for relevant information\nReview the lecture materials and tutorials in the repository\nConsult with your classmates or post in the course discussion forum\nAttend office hours or schedule an appointment with the instructor"
+  },
+  {
+    "objectID": "index.html#contributing-to-the-repository",
+    "href": "index.html#contributing-to-the-repository",
+    "title": "QTM 385 - Experimental Methods",
+    "section": "Contributing to the Repository",
+    "text": "Contributing to the Repository\nWhile this repository is primarily maintained by the course instructor, everyone is welcome to contribute. Please feel free to suggest improvements or report issues by opening a GitHub issue, submitting a pull request, creating a discussion post, or contacting the instructor directly."
+  },
+  {
+    "objectID": "index.html#license",
+    "href": "index.html#license",
+    "title": "QTM 385 - Experimental Methods",
+    "section": "License",
+    "text": "License\nThis repository is licensed under the MIT License. You are free to use, modify, and distribute the materials as needed, with appropriate attribution to the original source.\n\nWe look forward to an engaging and productive semester! Happy coding!"
+  },
+  {
+    "objectID": "guides/pap.html",
+    "href": "guides/pap.html",
+    "title": "A Guide to Pre-Analysis Plans (PAPs)",
+    "section": "",
+    "text": "Pre-Analysis Plans (PAPs) are detailed documents that researchers create before collecting or analysing data, outlining their intended research methodology, hypotheses, and analytical approach. These plans have become increasingly important in social and biological sciences as a tool to enhance research transparency, credibility, and reproducibility. PAPs serve as a roadmap for researchers, helping them think through their study design and analysis strategy in advance, while also providing a public record of their intentions.\nThe use of PAPs has grown significantly in recent years, particularly in fields such as economics, political science, and psychology. According to the American Economic Association’s website, as of 2024, the AEA RCT Registry currently lists 8,937 studies with locations in 169 countries1. This trend reflects a growing recognition of the importance of research transparency and the need to address issues such as publication bias and p-hacking."
+  },
+  {
+    "objectID": "guides/pap.html#enhancing-research-transparency",
+    "href": "guides/pap.html#enhancing-research-transparency",
+    "title": "A Guide to Pre-Analysis Plans (PAPs)",
+    "section": "Enhancing Research Transparency",
+    "text": "Enhancing Research Transparency\nPAPs provide a clear record of the researcher’s intentions before data collection or analysis, reducing concerns about data mining or selective reporting. By specifying analyses in advance, researchers demonstrate their commitment to transparent and unbiased research practices. This transparency allows other researchers and stakeholders to distinguish between pre-planned analyses and exploratory findings, increasing confidence in the reported results.\nFor example, in a study on the effects of a cash transfer program on educational outcomes, researchers might specify in their PAP that they will analyse the impact on primary school enrollment rates, test scores, and dropout rates. By doing so, they commit to reporting these outcomes regardless of whether the results are statistically significant or align with their hypotheses. This approach prevents the temptation to selectively report only positive or interesting findings after seeing the data."
+  },
+  {
+    "objectID": "guides/pap.html#improving-research-quality",
+    "href": "guides/pap.html#improving-research-quality",
+    "title": "A Guide to Pre-Analysis Plans (PAPs)",
+    "section": "Improving Research Quality",
+    "text": "Improving Research Quality\nBy forcing researchers to think through their analysis in advance, PAPs can lead to better-designed studies and more robust analytical approaches. This process often reveals potential issues or oversights that can be addressed before data collection begins. For instance, when drafting a PAP, researchers might realise they need to include additional control variables or consider potential confounding factors they had not initially thought of.\nConsider a medical study examining the effectiveness of a new drug. In developing the PAP, researchers might recognise the need to stratify their sample based on age groups or pre-existing conditions, leading to a more nuanced and informative analysis. They might also identify potential interaction effects between the drug and other medications, prompting them to collect data on participants’ full medical histories."
+  },
+  {
+    "objectID": "guides/pap.html#addressing-publication-bias",
+    "href": "guides/pap.html#addressing-publication-bias",
+    "title": "A Guide to Pre-Analysis Plans (PAPs)",
+    "section": "Addressing Publication Bias",
+    "text": "Addressing Publication Bias\nPAPs can help combat publication bias by encouraging the reporting of all pre-specified analyses, regardless of their results. This approach ensures that null or unexpected findings are not selectively omitted from publication. Publication bias is a significant issue in many fields, where studies with positive or novel results are more likely to be published than those with null or negative findings.\nFor example, in psychology, the “file drawer problem” refers to the tendency for studies with non-significant results to remain unpublished. By pre-registering their analyses, researchers commit to reporting all findings, which can help provide a more balanced view of the evidence. In a meta-analysis of psychological interventions, for instance, including pre-registered studies might reveal that the overall effect size is smaller than what would be estimated based solely on published literature."
+  },
+  {
+    "objectID": "guides/pap.html#increasing-credibility",
+    "href": "guides/pap.html#increasing-credibility",
+    "title": "A Guide to Pre-Analysis Plans (PAPs)",
+    "section": "Increasing Credibility",
+    "text": "Increasing Credibility\nPre-registering analyses can increase the credibility of research findings, as it demonstrates that the results were not cherry-picked or manipulated to achieve desired outcomes. This is particularly important in fields where research findings can influence policy decisions or clinical practices.\nFor instance, in a study on the effectiveness of a new educational intervention, pre-registering the primary outcome measures (e.g., standardised test scores) and analysis methods prevents researchers from selectively reporting only the most favorable results. If the intervention shows mixed effects – perhaps improving math scores but not reading scores – the PAP ensures that both outcomes are reported, providing a more accurate picture of the intervention’s impact."
+  },
+  {
+    "objectID": "guides/pap.html#facilitating-replication",
+    "href": "guides/pap.html#facilitating-replication",
+    "title": "A Guide to Pre-Analysis Plans (PAPs)",
+    "section": "Facilitating Replication",
+    "text": "Facilitating Replication\nDetailed PAPs make it easier for other researchers to replicate studies, as they provide a clear roadmap of the intended analyses and methodologies. Replication is crucial for scientific progress, but it often fails due to insufficient information about the original study’s methods.\nFor example, in a complex econometric analysis of labor market policies, a well-written PAP would specify not only the data sources and variables used but also the exact statistical models, including any transformations or coding of variables. This level of detail allows other researchers to reproduce the analysis, even if they do not have access to the original data, by following the same procedures with similar datasets."
+  },
+  {
+    "objectID": "guides/pap.html#research-questions-and-hypotheses",
+    "href": "guides/pap.html#research-questions-and-hypotheses",
+    "title": "A Guide to Pre-Analysis Plans (PAPs)",
+    "section": "Research Questions and Hypotheses",
+    "text": "Research Questions and Hypotheses\nClearly state the primary research questions and hypotheses to be tested. Be specific about what you expect to find and why. This section should provide a theoretical framework for the study and explain how the hypotheses relate to existing literature. For instance:\nResearch Question: “Does providing microfinance loans to women in rural areas increase their household income and empowerment?”\nHypotheses:\n\nWomen who receive microfinance loans will show a 20% increase in household income after one year compared to the control group.\nLoan recipients will report higher scores on a standardised empowerment index, with an expected effect size of 0.5 standard deviations.\nThe impact of loans on income will be moderated by the recipient’s level of education, with more educated women showing larger income gains."
+  },
+  {
+    "objectID": "guides/pap.html#sample-and-data-collection",
+    "href": "guides/pap.html#sample-and-data-collection",
+    "title": "A Guide to Pre-Analysis Plans (PAPs)",
+    "section": "Sample and Data Collection",
+    "text": "Sample and Data Collection\nDescribe the sample size, sampling method, and data collection procedures in detail. Include information on:\n\nTarget population\nInclusion and exclusion criteria\nRecruitment methods\nSample size calculations and power analysis\n\nFor instance, in a study on the effectiveness of a new teaching method:\n“We will recruit 1000 students from 50 public high schools in urban areas of California. Schools will be randomly selected from a list of all eligible schools (defined as those with at least 500 students and a 30% or higher free lunch program participation rate). Within each school, we will randomly select 20 students from the 10th grade. Power calculations indicate that this sample size will allow us to detect an effect size of 0.2 standard deviations with 80% power at a 5% significance level, accounting for potential clustering at the school level.”"
+  },
+  {
+    "objectID": "guides/pap.html#outcome-measures",
+    "href": "guides/pap.html#outcome-measures",
+    "title": "A Guide to Pre-Analysis Plans (PAPs)",
+    "section": "Outcome Measures",
+    "text": "Outcome Measures\nDefine primary and secondary outcome measures, including how they will be constructed from raw data. Provide detailed information on:\n\nVariable definitions\nMeasurement scales\nData sources\nAny planned data transformations\n\nExample for a health intervention study: “Primary outcome: Body Mass Index (BMI), calculated as weight in kilograms divided by height in meters squared. Weight will be measured using a calibrated digital scale, and height will be measured using a stadiometer. Both measurements will be taken twice and averaged.\nSecondary outcomes:\n\nPhysical activity level: Measured using the International Physical Activity Questionnaire (IPAQ), scored according to the official IPAQ scoring protocol.\nDietary quality: Assessed using a 7-day food diary, which will be analysed to create a Healthy Eating Index (HEI) score ranging from 0-100.\nSelf-efficacy for health behaviors: Measured using the Health-Specific Self-Efficacy Scale, a 10-item Likert scale questionnaire.”"
+  },
+  {
+    "objectID": "guides/pap.html#statistical-models-and-analyses",
+    "href": "guides/pap.html#statistical-models-and-analyses",
+    "title": "A Guide to Pre-Analysis Plans (PAPs)",
+    "section": "Statistical Models and Analyses",
+    "text": "Statistical Models and Analyses\nSpecify the statistical models and analyses to be used, including:\n\nType of statistical tests (e.g., t-tests, ANOVA, regression)\nModel specifications\nHandling of missing data\nTreatment of outliers\nPlanned subgroup analyses or robustness checks\n\nFor example, in an economic study on the impact of a job training program:\n“Main analysis: We will use an OLS regression model to estimate the effect of the job training program on annual income:\n\\[ Income_i = \\beta_0 + \\beta_1 Treatment_i + \\beta_2 BaselineIncome_i + \\beta_3 Education_i + \\beta_4 Age_i + \\beta_5 Gender_i + \\varepsilon_i \\]\nWhere \\(Treatment_i\\) is a dummy variable indicating assignment to the job training program.\nMissing data: We will use multiple imputation with chained equations (MICE) to handle missing data, creating 20 imputed datasets.\nOutliers: Income values above the 99th percentile will be winsorised to reduce the influence of extreme outliers.\nSubgroup analysis: We will examine heterogeneous treatment effects by gender and by baseline income quartiles, adding interaction terms to the main regression model.\nRobustness checks: We will re-run the main analysis using a difference-in-differences approach and a propensity score matching method to ensure our results are not sensitive to the choice of analytical approach.”"
+  },
+  {
+    "objectID": "guides/pap.html#multiple-hypothesis-testing",
+    "href": "guides/pap.html#multiple-hypothesis-testing",
+    "title": "A Guide to Pre-Analysis Plans (PAPs)",
+    "section": "Multiple Hypothesis Testing",
+    "text": "Multiple Hypothesis Testing\nAddress how multiple hypothesis testing will be handled to control for false positives. Describe methods such as:\n\nBonferroni correction\nFalse Discovery Rate (FDR) control\nFamily-wise error rate (FWER) control\n\nExample: “To address multiple hypothesis testing, we will use the following approach:\n\nFor our three primary outcomes, we will use the Bonferroni correction, adjusting the significance level to \\(\\alpha = 0.05 / 3 = 0.0167\\).\nFor secondary outcomes, we will control the False Discovery Rate using the Benjamini-Hochberg procedure with a q-value of 0.10.\nFor exploratory analyses, we will report unadjusted p-values but clearly label these findings as exploratory and interpret them cautiously.”"
+  },
+  {
+    "objectID": "guides/pap.html#covariates-and-control-variables",
+    "href": "guides/pap.html#covariates-and-control-variables",
+    "title": "A Guide to Pre-Analysis Plans (PAPs)",
+    "section": "Covariates and Control Variables",
+    "text": "Covariates and Control Variables\nList all covariates and control variables to be included in the analyses, explaining their relevance to the research questions. For instance:\n“We will include the following control variables in our main regression analyses:\n\nAge: Continuous variable, measured in years\nGender: Binary variable (0 = male, 1 = female)\nEducation level: Categorical variable with four levels (less than high school, high school graduate, some college, college graduate or higher)\nBaseline income: Continuous variable, measured in dollars\nEmployment status at baseline: Binary variable (0 = unemployed, 1 = employed)\n\nThese variables are included because previous research has shown they are strong predictors of labor market outcomes and may influence the effectiveness of job training programs.”"
+  },
+  {
+    "objectID": "guides/pap.html#heterogeneous-effects",
+    "href": "guides/pap.html#heterogeneous-effects",
+    "title": "A Guide to Pre-Analysis Plans (PAPs)",
+    "section": "Heterogeneous Effects",
+    "text": "Heterogeneous Effects\nIf applicable, describe any planned analyses of heterogeneous effects or subgroup analyses. For example:\n“We will examine heterogeneous treatment effects for the following subgroups:\n\nGender: We hypothesise that the job training program may have differential effects for men and women due to differences in labor market discrimination and occupational segregation.\nAge groups: We will analyse treatment effects separately for participants under 30, 30-50, and over 50 years old, as the effectiveness of job training may vary across career stages.\nEducation level: We will examine whether the program’s impact differs based on participants’ educational attainment.\n\nFor each subgroup analysis, we will add interaction terms between the treatment indicator and the subgroup variable to our main regression model.”"
+  },
+  {
+    "objectID": "guides/pap.html#power-calculations",
+    "href": "guides/pap.html#power-calculations",
+    "title": "A Guide to Pre-Analysis Plans (PAPs)",
+    "section": "Power Calculations",
+    "text": "Power Calculations\nInclude power calculations to justify the chosen sample size and demonstrate the ability to detect meaningful effects. For instance:\n“We conducted power calculations using R and the DeclareDesign package. Assuming a two-tailed test with \\(\\alpha = 0.05\\) and 80% power, our sample size of 1000 participants (500 per group) allows us to detect a minimum effect size of \\(d = 0.18\\) for our primary outcome of annual income. This effect size is considered small to medium and is in line with previous studies on similar job training interventions. For our subgroup analyses, the minimum detectable effect size increases to \\(d = 0.28\\), which we consider acceptable for these secondary analyses.”"
+  },
+  {
+    "objectID": "guides/pap.html#constraining-exploratory-analysis",
+    "href": "guides/pap.html#constraining-exploratory-analysis",
+    "title": "A Guide to Pre-Analysis Plans (PAPs)",
+    "section": "Constraining Exploratory Analysis",
+    "text": "Constraining Exploratory Analysis\nPAPs may limit researchers’ ability to explore unexpected findings in the data. To address this, consider including a section for planned exploratory analyses. For example:\n“While our primary analyses will focus on the pre-specified outcomes and methods outlined above, we recognise the potential for unexpected findings. We will include a clearly labeled exploratory analysis section in our final report, where we may investigate:\n\nNon-linear relationships between continuous predictors and outcomes\nPotential mediating factors in the relationship between the intervention and primary outcomes\nUnexpected patterns or clusters in the data identified through data visualization techniques\n\nAny findings from these exploratory analyses will be clearly labeled as such and interpreted cautiously, with an emphasis on generating hypotheses for future research rather than drawing definitive conclusions.”"
+  },
+  {
+    "objectID": "guides/pap.html#incomplete-specification",
+    "href": "guides/pap.html#incomplete-specification",
+    "title": "A Guide to Pre-Analysis Plans (PAPs)",
+    "section": "Incomplete Specification",
+    "text": "Incomplete Specification\nIt is challenging to anticipate all possible analyses or issues that may arise during the research process. Be as comprehensive as possible while allowing for some flexibility. For instance:\n“While we have attempted to be as comprehensive as possible in this PAP, we acknowledge that unforeseen circumstances may necessitate deviations from the plan. Any such deviations will be clearly documented and justified in the final report. Potential scenarios that might require flexibility include:\n\nLower than expected recruitment rates, which may necessitate adjustments to the power calculations and potentially the analytical approach\nUnexpected data quality issues that may require additional data cleaning or imputation methods\nExternal events (e.g., policy changes, economic shocks) that may impact the interpretation of our results\n\nIn such cases, we will strive to adhere as closely as possible to the spirit of the original plan while making necessary adjustments to ensure the validity and relevance of our analyses.”"
+  },
+  {
+    "objectID": "guides/pap.html#time-and-resource-intensive",
+    "href": "guides/pap.html#time-and-resource-intensive",
+    "title": "A Guide to Pre-Analysis Plans (PAPs)",
+    "section": "Time and Resource Intensive",
+    "text": "Time and Resource Intensive\nCreating a detailed PAP can be time-consuming and may require additional resources. However, this upfront investment often leads to more efficient and robust research in the long run. Researchers should budget time and resources for developing a comprehensive PAP, potentially including:\n\nLiterature review to inform hypotheses and analytical approaches\nConsultation with statisticians or methodologists to refine the analytical plan\nPilot studies or simulations to inform power calculations and test data collection instruments\nTeam meetings to discuss and refine the PAP\nExternal review of the PAP by colleagues or experts in the field\n\nWhile this process may seem daunting, it can ultimately save time and resources by identifying potential issues early and providing a clear roadmap for the research project."
+  },
+  {
+    "objectID": "guides/pap.html#balancing-specificity-and-flexibility",
+    "href": "guides/pap.html#balancing-specificity-and-flexibility",
+    "title": "A Guide to Pre-Analysis Plans (PAPs)",
+    "section": "Balancing Specificity and Flexibility",
+    "text": "Balancing Specificity and Flexibility\nFinding the right balance between being specific enough to prevent p-hacking and flexible enough to address unforeseen circumstances can be challenging. One approach is to specify decision rules for potential deviations from the plan. For example:\n“We will adhere to the following decision rules for potential deviations from the PAP:\n\nIf recruitment falls below 80% of the target sample size, we will recalculate power analyses and may adjust our primary outcome to a composite measure to maintain adequate statistical power.\nIf attrition exceeds 20%, we will conduct sensitivity analyses using multiple imputation and inverse probability weighting in addition to our planned complete case analysis.\nIf we discover strong violations of model assumptions (e.g., non-normality, heteroscedasticity), we will employ appropriate transformations or alternative modeling approaches (e.g., generalised linear models, non-parametric tests) and report both the original and alternative analyses.”"
+  },
+  {
+    "objectID": "guides/pap.html#be-specific-but-allow-for-flexibility",
+    "href": "guides/pap.html#be-specific-but-allow-for-flexibility",
+    "title": "A Guide to Pre-Analysis Plans (PAPs)",
+    "section": "Be Specific but Allow for Flexibility",
+    "text": "Be Specific but Allow for Flexibility\nProvide detailed plans while allowing for some flexibility to address unforeseen circumstances. Consider including decision rules for potential deviations from the plan. For example:\n“This PAP outlines our primary analytical strategy, but we acknowledge that unforeseen circumstances may necessitate adjustments. We will adhere to the following principles when considering deviations from the plan:\n\nAny deviation must be justified based on methodological grounds or unforeseen data characteristics, not on the results of preliminary analyses.\nAll deviations will be clearly documented and reported in the final manuscript, including the rationale for the change and any implications for the interpretation of results.\nWe will consult with independent experts or our advisory board before implementing major changes to the analysis plan.\nIf substantial deviations are required, we will consider publishing an addendum to the original PAP, clearly stating the changes and their justifications.”"
+  },
+  {
+    "objectID": "guides/pap.html#register-your-pap",
+    "href": "guides/pap.html#register-your-pap",
+    "title": "A Guide to Pre-Analysis Plans (PAPs)",
+    "section": "Register Your PAP",
+    "text": "Register Your PAP\nRegister your PAP with a recognised registry, such as:\n\nOpen Science Framework (OSF)\nEGAP Pre-Analysis Plan Registry\nAEA RCT Registry\nClinicalTrials.gov (for medical research)\n\nRegistration provides a time-stamped, publicly accessible version of your plan, enhancing transparency and credibility."
+  },
+  {
+    "objectID": "guides/pap.html#update-as-necessary",
+    "href": "guides/pap.html#update-as-necessary",
+    "title": "A Guide to Pre-Analysis Plans (PAPs)",
+    "section": "Update as Necessary",
+    "text": "Update as Necessary\nIf changes to the plan are required, document and justify these changes transparently. Consider using version control to track modifications. For example:\n“Any updates to this PAP will be logged in a change document, which will include:\n\nDate of the change\nDescription of the modification\nRationale for the change\nPotential impact on the interpretation of results\n\nThis change log will be made publicly available alongside the original PAP.”"
+  },
+  {
+    "objectID": "guides/pap.html#use-clear-and-precise-language",
+    "href": "guides/pap.html#use-clear-and-precise-language",
+    "title": "A Guide to Pre-Analysis Plans (PAPs)",
+    "section": "Use Clear and Precise Language",
+    "text": "Use Clear and Precise Language\nWrite your PAP in clear, unambiguous language to ensure that other researchers can understand and potentially replicate your planned analyses. Avoid jargon where possible, and define technical terms when they are necessary."
+  },
+  {
+    "objectID": "guides/pap.html#include-code-and-syntax",
+    "href": "guides/pap.html#include-code-and-syntax",
+    "title": "A Guide to Pre-Analysis Plans (PAPs)",
+    "section": "Include Code and Syntax",
+    "text": "Include Code and Syntax\nWhen possible, include example code or syntax for planned analyses to further enhance reproducibility. This could be done by:\n\nProviding annotated code snippets in an appendix\nLinking to a public repository (e.g., GitHub) with full analysis scripts\nIncluding pseudo-code for complex analytical procedures"
+  },
+  {
+    "objectID": "guides/pap.html#seek-feedback",
+    "href": "guides/pap.html#seek-feedback",
+    "title": "A Guide to Pre-Analysis Plans (PAPs)",
+    "section": "Seek Feedback",
+    "text": "Seek Feedback\nShare your PAP with colleagues or mentors for feedback before finalising and registering it. Consider:\n\nOrganising a pre-registration workshop with your research team\nRequesting review from methodologists or subject matter experts\nPresenting your PAP at a departmental seminar for broader input"
+  },
+  {
+    "objectID": "guides/pap.html#footnotes",
+    "href": "guides/pap.html#footnotes",
+    "title": "A Guide to Pre-Analysis Plans (PAPs)",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nSee: https://www.socialscienceregistry.org/. Access: July 2024.↩︎"
+  },
+  {
+    "objectID": "guides/guides.html",
+    "href": "guides/guides.html",
+    "title": "Guides",
+    "section": "",
+    "text": "Below you will find a list of available guides with instructions on how to install and use the tools we will be using in class."
+  },
+  {
+    "objectID": "guides/guides.html#available-tutorials",
+    "href": "guides/guides.html#available-tutorials",
+    "title": "Guides",
+    "section": "Available Tutorials",
+    "text": "Available Tutorials\n\nLink here\n\nPDF versions of the tutorials are also available on GitHub: https://github.com/danilofreire/qtm350/tree/main/tutorials."
+  },
+  {
+    "objectID": "guides/guides.html#additional-resources",
+    "href": "guides/guides.html#additional-resources",
+    "title": "Guides",
+    "section": "Additional Resources",
+    "text": "Additional Resources\n\nFurther examples\n\n\nSuggested Books\n\nPython for Data Analysis by Wes McKinney\nElements of Data Science by Allen Downey\nSQL for Data Scientists by Renee M. P. Teate\nData Science on the Command Line by Jeroen Janssens\nDocker for Data Science by Joshua Cook\nPro Git by Scott Chacon and Ben Straub\nFree programming books\n\n\n\nOnline Courses\n\nCoursera: Python for Everybody Specialisation\nedX: Python Basics for Data Science\nCodecademy: Learn Python\nDataCamp: Introduction to SQL\nCoursera: SQL for Data Science\nCoursera: Introduction to Git and GitHub\nMicrosoft Learn: GitHub Copilot Fundamentals\n\n\n\nDocumentation\n\nOfficial Python Documentation\nNumPy Documentation\nPandas Documentation\nMatplotlib Documentation\nPostgreSQL Documentation\nGit Documentation\nGitHub Documentation\nDask Documentation\nGitHub Co-Pilot Documentation\nDocker Documentation\n\nFor any questions or issues regarding these tutorials, please open a GitHub issue, submit a pull request, or create a discussion post.\nPlease do not forget that, in addition to the tutorials here, the course syllabus also contains a list of recommended weekly readings and additional resources.\nI hope you like the tutorials and find them useful!"
+  },
+  {
+    "objectID": "syllabus.html",
+    "href": "syllabus.html",
+    "title": "QTM 385 - Experimental Methods",
+    "section": "",
+    "text": "Course Description\nText here.\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "lectures/lectures.html",
+    "href": "lectures/lectures.html",
+    "title": "Lectures",
+    "section": "",
+    "text": "Text here.\n\n\n\n Back to top"
+  }
+]

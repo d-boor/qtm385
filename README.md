@@ -1,66 +1,46 @@
-# QTM 385 - Principles of Experimental Design
+# QTM 385 - Experimental Methods
 
-## Course Description
+This branch hosts the website for the course [QTM 385 - Experimental 
+Methods](http://danilofreire.github.io/qtm385) at [Emory
+University](http://www.emory.edu). The course provides an introduction to
+randomised controlled trials, including experimental design, analysis, and
+reproducibility. Please refer to the `main`
+branch of [this repository](https://github.com/danilofreire/qtm350) for the
+course materials.
 
-Welcome to [QTM 385](https://github.com/danilofreire/qtm385)! This course introduces the principles of experimental design, focusing on the design and analysis of experiments in the social and life sciences. We will cover the basics of probability theory, hypothesis testing, and statistical inference, as well as the design of experiments and surveys. You will learn how to use statistical software to analyse data and interpret results, and how to communicate your findings effectively. We will also discuss ethical issues in experimental research and the importance of transparency and reproducibility in scientific work. Throughout the course, you will develop the skills needed to design and conduct your experiments and surveys and evaluate the work of others.
+## Building the website
 
-## Contact Information
+I used [Quarto](https://quarto.org) to build the website, and the process was
+quite straightforward. To keep the website organised, I created a `gh-pages`
+branch and removed all unnecessary files. Then, I converted some of the course
+materials, such as the syllabus, to `.qmd` format (Quarto Markdown) and added
+them to their respective folders. The tutorials were already in `.qmd` format,
+so I simply moved them to the `tutorials` folder and added a `tutorials.qmd`
+file to list them. Similarly, the lectures are described in the `lectures.qmd`
+file.
 
-- [Danilo Freire](https://danilofreire.github.io/)
-  - Email: [`danilofreire@gmail.com`](mailto:danilofreire@gmail.com)
-  - Office hours: By appointment at any time (online or in person).
+I decided to keep the Jupyter Notebooks, which will be used in the lectures,
+only in the `main` branch. This way, I encourage students to download the
+repository and follow the lectures using their local Jupyter environment.
 
-## Learning Outcomes
+The `_quarto.yml` file contains the configuration for the website, including
+the theme, the title, and the navigation bar. The website files are in the
+`docs/` folder, as it is one of the easiest ways to host a website on GitHub. I
+also added a `.nojekyll` file to the root of the repository to prevent GitHub
+from processing the website as a Jekyll project.
 
-By the end of this course, students will be able to:
+I then built the website with `quarto render docs/` and pushed the changes to the
+`gh-pages` branch with `git push origin gh-pages`.
 
-1. Design rigorous experimental studies, including appropriate randomisation procedures and sample size calculations.
-2. Develop comprehensive pre-analysis plans (PAPs) for experimental research, demonstrating an understanding of best practices in pre-registration.
-3. Apply statistical techniques to analyse experimental data.
-4. Use Quarto to create reproducible research documents and presentations.
-5. Critically evaluate experimental designs and results, identifying potential issues and limitations.
-6. Adapt analysis strategies to address unexpected challenges in experimental data.
-7. Understand and apply ethical considerations in experimental design and analysis.
-8. Develop problem-solving skills through regular problem sets covering various aspects of experimental design and analysis.
+For further information on how to build a website with Quarto, please refer to
+<https://quarto.org/docs/websites/>.
 
-## Repository Structure
-
-This repository is organised as follows:
-
-- [`assignments/`](https://github.com/danilofreire/qtm385/tree/main/assignments): Contains all course assignments
-- [`lectures/`](https://github.com/danilofreire/qtm385/tree/main/lectures): Includes lecture materials and code
-- [`tutorials/`](https://github.com/danilofreire/qtm385/tree/main/tutorials): Step-by-step guides for the tools used in the course
-- [`README.md`](https://github.com/danilofreire/qtm385/blob/main/README.md): This file, providing an overview of the course and repository
-- [`syllabus.pdf`](https://github.com/danilofreire/qtm385/blob/main/syllabus/syllabus.pdf): Course syllabus in PDF format
-
-The course website is available at <https://danilofreire.github.io/qtm385/>.
-
-## Getting Help
-
-If you encounter any issues with the course materials or have questions about the content, please:
-
-1. Check the [course syllabus](https://github.com/danilofreire/qtm385/blob/main/syllabus/syllabus.pdf), the [tutorials](https://github.com/danilofreire/qtm385/tree/main/tutorials), and this README file for relevant information
-2. Review the [lecture materials](https://github.com/danilofreire/qtm385/tree/main/lectures) in the repository
-3. Consult with your classmates or post in the [course discussion forum](https://github.com/danilofreire/qtm350/discussions)
-4. Attend office hours or schedule an appointment with the instructor
-
-## Contributing to the Repository
-
-While this repository is primarily maintained by the course instructor,
-everyone is welcome to contribute. Please feel free to suggest improvements or
-report issues by [opening a GitHub
-issue](https://github.com/danilofreire/qtm385/issues), [submitting a pull
-request](https://github.com/danilofreire/qtm385/pulls), [creating a discussion
-post](https://github.com/danilofreire/qtm385/discussions), or [contacting the
-instructor directly](mailto:danilo.freire@emory.edu).
+If you have any questions, please feel free to [open an
+issue](https://github.com/danilofreire/qtm385/issues) or [create a pull
+request](https://github.com/danilofreire/qtm385/pulls).
 
 ## License
 
-This repository is licensed under the [MIT
-License](https://github.com/danilofreire/qtm350/blob/main/LICENSE.qmd). You are
-free to use, modify, and distribute the materials as needed, with appropriate
-attribution to the original source.
-
------
-
-We look forward to an engaging and productive semester! Thank you! :smiley:
+The content of this repository is released under the [MIT
+License](LICENSE.qmd). You are free to use, modify or distribute it as long as
+you provide the attribution to the original author.
