@@ -18,11 +18,11 @@ website:
     left:
       - href: syllabus.qmd
         text: Syllabus
-      - href: lectures/lectures.qmd
+      - href: lectures.qmd
         text: Lectures
-      - href: assignments/assignments.qmd
+      - href: assignments.qmd
         text: Assignments
-      - href: guides/guides.qmd
+      - href: guides.qmd
         text: Guides
       - href: LICENSE.html
         text: " "

@@ -1,10 +1,11 @@
 ---
 title: "Markdown Guide"
+bibliography: references.bib
 ---
 
-# How to Use This Template {#sec-how-to-use}
+# How to Use This Guide
 
-This guide is written in [Markdown](https://www.markdownguide.org) and uses the [Quarto](https://quarto.org/docs/get-started/authoring/rstudio.html) document format. Quarto is a powerful tool that allows you to write in Markdown and convert your document to a variety of formats, including [PDF](https://quarto.org/docs/output-formats/pdf-basics.html), [HTML](https://quarto.org/docs/output-formats/html-basics.html), and [Word](https://quarto.org/docs/output-formats/ms-word.html). You can use this template to write your PAP in Markdown and then convert it to a PDF for submission.
+This guide is written in [Markdown](https://www.markdownguide.org) and uses the [Quarto](https://quarto.org/docs/get-started/authoring/rstudio.html) document format. Quarto is a powerful tool that allows you to write in Markdown and convert your document to a variety of formats, including [PDF](https://quarto.org/docs/output-formats/pdf-basics.html), [HTML](https://quarto.org/docs/output-formats/html-basics.html), and [Word](https://quarto.org/docs/output-formats/ms-word.html). 
 
 For you to use this template, you need to have [`R`](https://cran.r-project.org/), [Pandoc](https://pandoc.org/installing.html) and [Quarto](https://quarto.org/docs/get-started/) installed on your computer. You can install Pandoc by following the instructions on the Pandoc website. To install the Quarto package, run the following command in `R`:
 

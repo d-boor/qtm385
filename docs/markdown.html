@@ -54,26 +54,46 @@ div.sourceCode
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -141,7 +161,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">QTM 385</span>
     </a>
   </div>
@@ -152,23 +172,23 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../syllabus.html"> 
+    <a class="nav-link" href="./syllabus.html"> 
 <span class="menu-text">Syllabus</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../lectures/lectures.html"> 
+    <a class="nav-link" href="./lectures.html"> 
 <span class="menu-text">Lectures</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../assignments/assignments.html"> 
+    <a class="nav-link" href="./assignments.html"> 
 <span class="menu-text">Assignments</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../guides/guides.html"> 
+    <a class="nav-link" href="./guides.html"> 
 <span class="menu-text">Guides</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../LICENSE.html"> 
+    <a class="nav-link" href="./LICENSE.html"> 
 <span class="menu-text"> </span></a>
   </li>  
 </ul>
@@ -194,7 +214,7 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#sec-how-to-use" id="toc-sec-how-to-use" class="nav-link active" data-scroll-target="#sec-how-to-use">How to Use This Template</a></li>
+  <li><a href="#how-to-use-this-guide" id="toc-how-to-use-this-guide" class="nav-link active" data-scroll-target="#how-to-use-this-guide">How to Use This Guide</a></li>
   <li><a href="#sec-markdown" id="toc-sec-markdown" class="nav-link" data-scroll-target="#sec-markdown">How to Write Your Text Using Markdown</a>
   <ul class="collapse">
   <li><a href="#headings" id="toc-headings" class="nav-link" data-scroll-target="#headings">Headings</a></li>
@@ -207,7 +227,7 @@ window.Quarto = {
   <li><a href="#footnotes" id="toc-footnotes" class="nav-link" data-scroll-target="#footnotes">Footnotes</a></li>
   </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/danilofreire/qtm385/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li><li><a href="https://github.com/danilofreire/qtm385/blob/gh-pages/guides/markdown.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/danilofreire/qtm385/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li><li><a href="https://github.com/danilofreire/qtm385/blob/gh-pages/markdown.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -231,9 +251,9 @@ window.Quarto = {
 </header>
 
 
-<section id="sec-how-to-use" class="level1">
-<h1>How to Use This Template</h1>
-<p>This guide is written in <a href="https://www.markdownguide.org">Markdown</a> and uses the <a href="https://quarto.org/docs/get-started/authoring/rstudio.html">Quarto</a> document format. Quarto is a powerful tool that allows you to write in Markdown and convert your document to a variety of formats, including <a href="https://quarto.org/docs/output-formats/pdf-basics.html">PDF</a>, <a href="https://quarto.org/docs/output-formats/html-basics.html">HTML</a>, and <a href="https://quarto.org/docs/output-formats/ms-word.html">Word</a>. You can use this template to write your PAP in Markdown and then convert it to a PDF for submission.</p>
+<section id="how-to-use-this-guide" class="level1">
+<h1>How to Use This Guide</h1>
+<p>This guide is written in <a href="https://www.markdownguide.org">Markdown</a> and uses the <a href="https://quarto.org/docs/get-started/authoring/rstudio.html">Quarto</a> document format. Quarto is a powerful tool that allows you to write in Markdown and convert your document to a variety of formats, including <a href="https://quarto.org/docs/output-formats/pdf-basics.html">PDF</a>, <a href="https://quarto.org/docs/output-formats/html-basics.html">HTML</a>, and <a href="https://quarto.org/docs/output-formats/ms-word.html">Word</a>.</p>
 <p>For you to use this template, you need to have <a href="https://cran.r-project.org/"><code>R</code></a>, <a href="https://pandoc.org/installing.html">Pandoc</a> and <a href="https://quarto.org/docs/get-started/">Quarto</a> installed on your computer. You can install Pandoc by following the instructions on the Pandoc website. To install the Quarto package, run the following command in <code>R</code>:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(<span class="st">"quarto"</span>, <span class="st">"rmarkdown"</span>, <span class="st">"tidyverse"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>You also need to install a distribution on your computer to convert your Markdown document to a PDF. I recommend you install TinyTeX, a lightweight distribution of . You can install TinyTeX by running the following command in <code>R</code>:</p>
@@ -398,7 +418,7 @@ Figure&nbsp;1: Temperature and ozone level.
 </section>
 <section id="citations" class="level2">
 <h2 class="anchored" data-anchor-id="citations">Citations</h2>
-<p>You can include citations in your document using the <code>@</code> symbol followed by the citation key. For example, <code>@freire2018evaluating</code> will create a citation to the reference with the key <code>freire2018evaluating</code>. You can also include page numbers in your citation by writing <code>@freire2018evaluating [10--15]</code>. The result will be: <span class="citation" data-cites="freire2018evaluating">@freire2018evaluating [10--15]</span>. To include multiple citations in one bracket, you can write <code>[@freire2018evaluating 10; @mignozzetti2022legislature 15]</code>. This will create a citation like this: <span class="citation" data-cites="freire2018evaluating mignozzetti2022legislature">[@freire2018evaluating 10; @mignozzetti2022legislature 15]</span>.</p>
+<p>You can include citations in your document using the <code>@</code> symbol followed by the citation key. For example, <code>@freire2018evaluating</code> will create a citation to the reference with the key <code>freire2018evaluating</code>. You can also include page numbers in your citation by writing <code>@freire2018evaluating [10--15]</code>. The result will be: <span class="citation" data-cites="freire2018evaluating">Freire (<a href="#ref-freire2018evaluating" role="doc-biblioref">2018, 10–15</a>)</span>. To include multiple citations in one bracket, you can write <code>[@freire2018evaluating 10; @mignozzetti2022legislature 15]</code>. This will create a citation like this: <span class="citation" data-cites="freire2018evaluating mignozzetti2022legislature">(<a href="#ref-freire2018evaluating" role="doc-biblioref">Freire 2018, 10</a>; <a href="#ref-mignozzetti2022legislature" role="doc-biblioref">Mignozzetti, Cepaluni, and Freire 2022, 15</a>)</span>.</p>
 <p>To include a bibliography in your document, you need to create a <code>.bib</code> file with your references and include it in the YAML header of your document. As you can find in the YAML header of this document:</p>
 <div class="sourceCode" id="cb12"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">bibliography</span><span class="kw">:</span><span class="at"> references.bib</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>When searching for academic references, Google Scholar is an excellent tool for finding BibTeX citations. Here is a quick guide:</p>
@@ -416,11 +436,19 @@ Figure&nbsp;1: Temperature and ozone level.
 <p>Quarto supports inline footnotes<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. To create a footnote, simply add a caret and brackets with a label inside, like this: <code>[^label]</code>. Then, you can define the footnote content anywhere in the document using the same label followed by a colon<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>. I usually include them at the end of a paragraph. Quarto will automatically number and format your footnotes for you.</p>
 
 
+
 </section>
 </section>
 
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-freire2018evaluating" class="csl-entry" role="listitem">
+Freire, Danilo. 2018. <span>“<span class="nocase">Evaluating the effect of homicide prevention strategies in S<span class="nocase">ã</span>o Paulo, Brazil: A synthetic control approach</span>.”</span> <em>Latin American Research Review</em> 53 (2): 231–49.
+</div>
+<div id="ref-mignozzetti2022legislature" class="csl-entry" role="listitem">
+Mignozzetti, Umberto, Gabriel Cepaluni, and Danilo Freire. 2022. <span>“<span class="nocase">Legislature Size and Welfare: Evidence from Brazil</span>.”</span> <em>American Journal of Political Science</em>, 1–17.
+</div>
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
 <ol>
 <li id="fn1"><p>This is an inline footnote.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
@@ -995,11 +1023,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>Copyright 2024, Danilo Freire. The content of this site is licensed under the <a href="../guides/LICENSE.html">MIT License</a>.</p>
+<p>Copyright 2024, Danilo Freire. The content of this site is licensed under the <a href="./LICENSE.html">MIT License</a>.</p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/danilofreire/qtm385/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li><li><a href="https://github.com/danilofreire/qtm385/blob/gh-pages/guides/markdown.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/danilofreire/qtm385/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li><li><a href="https://github.com/danilofreire/qtm385/blob/gh-pages/markdown.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item compact">

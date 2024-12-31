@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>MIT License – QTM 385</title>
+<title>Quarto Guide – QTM 385</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,26 +20,60 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -78,7 +112,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">QTM 385</span>
     </a>
   </div>
@@ -89,23 +123,23 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../syllabus.html"> 
+    <a class="nav-link" href="./syllabus.html"> 
 <span class="menu-text">Syllabus</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../lectures/lectures.html"> 
+    <a class="nav-link" href="./lectures.html"> 
 <span class="menu-text">Lectures</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../assignments/assignments.html"> 
+    <a class="nav-link" href="./assignments.html"> 
 <span class="menu-text">Assignments</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../guides/guides.html"> 
+    <a class="nav-link" href="./guides.html"> 
 <span class="menu-text">Guides</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../LICENSE.html"> 
+    <a class="nav-link" href="./LICENSE.html"> 
 <span class="menu-text"> </span></a>
   </li>  
 </ul>
@@ -126,15 +160,27 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#why-is-reproducing-research-important" id="toc-why-is-reproducing-research-important" class="nav-link active" data-scroll-target="#why-is-reproducing-research-important">Why is reproducing research important?</a></li>
+  <li><a href="#installing-quarto" id="toc-installing-quarto" class="nav-link" data-scroll-target="#installing-quarto">Installing Quarto</a></li>
+  <li><a href="#creating-a-new-quarto-document" id="toc-creating-a-new-quarto-document" class="nav-link" data-scroll-target="#creating-a-new-quarto-document">Creating a new Quarto document</a></li>
+  <li><a href="#writing-content-in-quarto" id="toc-writing-content-in-quarto" class="nav-link" data-scroll-target="#writing-content-in-quarto">Writing content in Quarto</a></li>
+  <li><a href="#generating-output-formats" id="toc-generating-output-formats" class="nav-link" data-scroll-target="#generating-output-formats">Generating output formats</a></li>
+  <li><a href="#creating-a-.bib-file" id="toc-creating-a-.bib-file" class="nav-link" data-scroll-target="#creating-a-.bib-file">Creating a <code>.bib</code> file</a></li>
+  <li><a href="#additional-resources" id="toc-additional-resources" class="nav-link" data-scroll-target="#additional-resources">Additional resources</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/danilofreire/qtm385/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li><li><a href="https://github.com/danilofreire/qtm385/blob/gh-pages/quarto.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">MIT License</h1>
+<h1 class="title">Quarto Guide</h1>
 </div>
 
 
@@ -151,12 +197,119 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Copyright (c) 2024 Danilo Freire</p>
-<p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
-<p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
-<p>THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+<p>Welcome to the Quarto guide for QTM 385! This guide provides an introduction to <a href="https://quarto.org">Quarto</a>, a document authoring system that supports Markdown, LaTeX, R, Python, and more. Quarto is designed to help you create reproducible research documents and presentations, making it a great tool for academic writing and data analysis.</p>
+<p>Quarto is very versatile and easy to use. If you are familiar with <a href="https://jupyter.org/">Jupyter Notebooks</a>, you will be right at home with Quarto. <a href="https://rmarkdown.rstudio.com/">R Markdown</a> users will find Quarto even easier, as it is only a more powerful version of R Markdown, which supports multiple programming languages (such as Python) and output formats.</p>
+<p>In this guide, you will learn how to install Quarto, create a new Quarto project, write content in Markdown, and generate output formats such as HTML, PDF, and slides. You will also explore advanced features of Quarto, such as code execution, citations, and cross-references. By the end of this guide, you will be able to use Quarto effectively for your research projects and presentations.</p>
+<section id="why-is-reproducing-research-important" class="level1">
+<h1>Why is reproducing research important?</h1>
+<p><a href="https://en.wikipedia.org/wiki/Reproducibility">Reproducibility</a> is the ability of an entire experiment or study to be duplicated, either by the same researcher or by someone else working independently. Reproducing research is important for several reasons:</p>
+<ul>
+<li><strong>Transparency</strong>: Reproducible research allows others to verify the results of a study and build upon them. It promotes transparency and trust in the scientific process.</li>
+<li><strong>Error detection</strong>: Reproducing research can help identify errors or inconsistencies in the original study. It allows researchers to correct mistakes and improve the quality of their work.</li>
+<li><strong>Knowledge dissemination</strong>: Reproducible research makes it easier to share knowledge and findings with the broader scientific community. It enables others to learn from and build on existing research.</li>
+<li><strong>Research integrity</strong>: Reproducible research is essential for maintaining the integrity of the scientific process. It helps prevent fraud, bias, and other unethical practices.</li>
+</ul>
+<p>Currently, there is a <a href="https://en.wikipedia.org/wiki/Reproducibility_crisis">reproducibility crisis</a> in many scientific fields, including psychology, medicine, and economics. Many studies are not reproducible due to factors such as poor experimental design, publication bias, and the use of p-values. By adopting reproducible practices and tools like Quarto, researchers can help address this crisis and improve the reliability of scientific research.</p>
+</section>
+<section id="installing-quarto" class="level1">
+<h1>Installing Quarto</h1>
+<p>To get started with Quarto, you need to install the Quarto CLI (Command Line Interface) on your computer. Quarto is available for Windows, macOS, and Linux. Follow the instructions below to install Quarto on your operating system:</p>
+<ul>
+<li>Go to the <a href="https://quarto.org/docs/download/" class="uri">https://quarto.org/docs/download/</a> and select the appropriate download link for your operating system.</li>
+<li>Run the installer and follow the on-screen instructions to complete the installation.</li>
+<li>If you use macOS, you can also install Quarto using <a href="https://brew.sh/">Homebrew</a>. Run the following commands in your terminal to install Homebrew and Quarto:</li>
+</ul>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Install Homebrew</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">/bin/bash</span> <span class="at">-c</span> <span class="st">"</span><span class="va">$(</span><span class="ex">curl</span> <span class="at">-fsSL</span> https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span class="va">)</span><span class="st">"</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Install Quarto</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> install quarto</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>If you use <a href="https://code.visualstudio.com/">VS Code</a> (which I recommend), you can also install the <a href="https://marketplace.visualstudio.com/items?itemName=quarto.quarto">Quarto extension</a> to work with Quarto projects directly in the editor. It makes things easier and more convenient.</p>
+<p>For more detailed installation instructions, refer to the <a href="https://quarto.org/docs/getting-started/installation.html">Quarto documentation</a>.</p>
+</section>
+<section id="creating-a-new-quarto-document" class="level1">
+<h1>Creating a new Quarto document</h1>
+<p>Quarto uses the <code>.qmd</code> file extension for Quarto Markdown files. These files can be converted into various output formats, such as HTML, PDF, Word documents, slides, and even websites. This website, the syllabus, and all class slides were created using Quarto!</p>
+<p>Here you will not need to use Quarto for anything other than your pre-analysis plans (and slides if you are feeling adventurous). So you can simply use the <a href="https://github.com/danilofreire/qtm385/pap-template">PAP Template</a> to create your PAPs. But you will need to install a few things to make sure you can compile your PAPs into PDFs.</p>
+<p>First, you need to install <a href="https://pandoc.org/">Pandoc</a>, a universal document converter that Quarto uses to generate output formats. Pandoc is available for Windows, macOS, and Linux. You can download the installer from the <a href="https://pandoc.org/installing.html">Pandoc website</a> or install it using Homebrew on macOS:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> install pandoc</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Next, you need to install a LaTeX distribution to generate PDF output. I recommend using <a href="https://yihui.org/tinytex/">TinyTeX</a>, a lightweight LaTeX distribution that works well with Pandoc. The easiest way to install TinyTeX is through Quarto itself:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> install tinytex</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>For a more complete LaTeX distribution, you can install <a href="https://www.tug.org/texlive/">TeX Live</a>, which includes additional packages and tools. Please refer to the <a href="https://www.tug.org/texlive/">TeX Live website</a> for installation instructions.</p>
+<p>With these tools, you should be good to go!</p>
+</section>
+<section id="writing-content-in-quarto" class="level1">
+<h1>Writing content in Quarto</h1>
+<p>Quarto supports <a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a>, a lightweight markup language with plain text formatting syntax. Markdown is easy to read and write, making it a great choice for creating content quickly and efficiently. In Quarto, you can use Markdown to format text, add images, create lists, and more. The <a href="./markdown.html">Markdown Guide</a> provides a detailed overview of Markdown syntax and features.</p>
+<p>But before you start writing the document, you need to include a header with metadata about the document. This metadata includes the title, author, date, and other information that Quarto uses to generate the output. It should be placed at the beginning of the document between two sets of three dashes (<code>---</code>). Here is an example of a document header in Quarto:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"My Quarto Document"</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">author</span><span class="kw">:</span><span class="at"> </span><span class="st">"John Doe"</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="fu">date</span><span class="kw">:</span><span class="at"> </span><span class="st">"2022-01-01"</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="fu">format</span><span class="kw">:</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">pdf</span><span class="kw">:</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">toc</span><span class="kw">:</span><span class="at"> </span><span class="ch">false</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">toc-depth</span><span class="kw">:</span><span class="at"> </span><span class="dv">2</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">number-sections</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">colorlinks</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">mainfont</span><span class="kw">:</span><span class="at"> </span><span class="st">"Times New Roman"</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">geometry</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> top=2cm </span></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> bottom=2cm </span></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> left=2cm </span></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> right=2cm</span></span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">cite-method</span><span class="kw">:</span><span class="at"> natbib</span></span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">biblio-style</span><span class="kw">:</span><span class="at"> apalike</span></span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">bibliography</span><span class="kw">:</span><span class="at"> references.bib</span></span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a><span class="fu">editor</span><span class="kw">:</span></span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">render-on-save</span><span class="kw">:</span><span class="at"> </span><span class="ch">false</span></span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The header above uses <a href="https://yihui.org/knitr/">knitr</a> as the default code engine (R). You can also use <a href="https://jupyter.org/">Jupyter</a> as your code engine, just add <code>jupyter: python3</code> to the header.</p>
+<p>If you would like to use a more complex header, you can refer to my PDF template: <a href="https://github.com/danilofreire/quarto-templates/tree/main/article" class="uri">https://github.com/danilofreire/quarto-templates/tree/main/article</a>.</p>
+<p>After the header, you can start writing the content of your document using Markdown syntax.</p>
+</section>
+<section id="generating-output-formats" class="level1">
+<h1>Generating output formats</h1>
+<p>Once you have written your Quarto document, you can generate output formats using the Quarto CLI or the VS Code extension. To generate an output format, run the following command in your terminal:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render my-document.qmd <span class="at">--to</span> pdf</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This command tells Quarto to render the <code>my-document.qmd</code> file into a PDF format. You can replace <code>pdf</code> with other output formats such as <code>html</code>, <code>docx</code>, <code>slides</code>, etc. Quarto will generate the output file in the same directory as the input file.</p>
+<p>You can also simply use the VS Code extension to render the document. Just open the <code>.qmd</code> file in VS Code and click on the “Preview” button in the top right corner.</p>
+<p><img src="vscode-preview-button.png" class="img-fluid"></p>
+<p>It will open a preview of the document in your editor, like this:</p>
+<p><img src="vscode-preview.png" class="img-fluid"></p>
+<p>Both pictures are from the <a href="https://quarto.org/docs/get-started/hello/vscode.html">Quarto documentation</a>. Please have a look at <a href="https://quarto.org/docs/get-started/hello/vscode.html">this page</a> for more information on how to use Quarto with VS Code.</p>
+</section>
+<section id="creating-a-.bib-file" class="level1">
+<h1>Creating a <code>.bib</code> file</h1>
+<p>If you are using citations in your document, you will need to create a <code>.bib</code> file with your references. A <code>.bib</code> file is a BibTeX database that contains bibliographic information about your sources. You can create a <code>.bib</code> file using a text editor or reference management software like <a href="https://www.zotero.org/">Zotero</a>, <a href="https://www.mendeley.com/">Mendeley</a>, or <a href="https://www.jabref.org/">JabRef</a>.</p>
+<p>One of the easiest (and my favourite) ways to create a <code>.bib</code> file is to use <a href="https://scholar.google.com/">Google Scholar</a>. Just search for the paper you want to cite, click on the quotation marks below the title, and select BibTeX. It will give you the BibTeX entry for that paper, which you can copy and paste into your <code>.bib</code> file.</p>
+<p>For instance, to cite Paul Holland’s paper <a href="https://www.jstor.org/stable/2283131">“Statistics and Causal Inference”</a>, click on the quotation marks below the title, and you will see the BibTeX entry:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bibtex code-with-copy"><code class="sourceCode bibtex"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="va">@article</span>{<span class="ot">holland1986statistics</span>,</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">title</span>={Statistics and causal inference},</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">author</span>={Holland, Paul W},</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  <span class="dt">journal</span>={Journal of the American statistical Association},</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  <span class="dt">volume</span>={81},</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>  <span class="dt">number</span>={396},</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>  <span class="dt">pages</span>={945--960},</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>  <span class="dt">year</span>={1986},</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>  <span class="dt">publisher</span>={Taylor <span class="ch">\&amp;</span> Francis}</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Then you just need to copy and paste this entry into your <code>.bib</code> file. When you cite this paper in your Quarto document (e.g., <code>This is a paper by @holland1986statistics</code>), Quarto will automatically generate the bibliography for you.</p>
+</section>
+<section id="additional-resources" class="level1">
+<h1>Additional resources</h1>
+<p>Quarto has a lot of features and capabilities that are not covered in this guide. It also has hundreds of templates that you can use, as well as a great community that is always willing to help. Here are some resources that you may find useful:</p>
+<ul>
+<li><a href="https://quarto.org/">Quarto official website</a>.</li>
+<li>Awesome Quarto: <a href="https://github.com/mcanouil/awesome-quarto" class="uri">https://github.com/mcanouil/awesome-quarto</a>. This repository contains dozens of tutorials, examples, and resources.</li>
+<li>Çetinkaya-Rundel, M. &amp; Lowndes, J. S. (2022) <a href="https://www.youtube.com/watch?v=p7Hxu4coDl8">Keynote talk: Hello Quarto: Share • Collaborate • Teach • Reimagine</a>. <a href="https://mine.quarto.pub/hello-quarto/#/hello-quarto-title">Slides</a> and <a href="https://github.com/mine-cetinkaya-rundel/hello-quarto">source code</a>. This is one of the nicest Quarto presentations I have seen.</li>
+<li><a href="https://www.youtube.com/watch?v=_f3latmOhew&amp;t=2s">Getting Started with Quarto (YouTube)</a>. Posit (formerly RStudio) has a series of tutorials on Quarto on their YouTube channel. You can find their playlist <a href="https://www.youtube.com/playlist?list=PL9HYL-VRX0oQI8fVioFxMTBrViFnRX_Df">here</a>.</li>
+<li><a href="https://quarto.org/docs/extensions/">Quarto extensions</a>. Several extensions are available to enhance the functionality of Quarto, such as manuscript templates, citations, and cross-references.</li>
+</ul>
+<p>I think that is all you need to know for now! If you have any questions, or would like me to expand this guide, please let me know. All the best!</p>
 
 
+</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -727,11 +880,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>Copyright 2024, Danilo Freire. The content of this site is licensed under the <a href="../lectures/LICENSE.html">MIT License</a>.</p>
+<p>Copyright 2024, Danilo Freire. The content of this site is licensed under the <a href="./LICENSE.html">MIT License</a>.</p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><ul><li><a href="https://github.com/danilofreire/qtm385/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li><li><a href="https://github.com/danilofreire/qtm385/blob/gh-pages/lectures/LICENSE.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/danilofreire/qtm385/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li><li><a href="https://github.com/danilofreire/qtm385/blob/gh-pages/quarto.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item compact">

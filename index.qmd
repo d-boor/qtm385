@@ -2,9 +2,9 @@
 title: "QTM 385 - Experimental Methods"
 ---
 
-Welcome to [QTM 385](https://github.com/danilofreire/qtm385)! This course...
+Welcome to [QTM 385](https://github.com/danilofreire/qtm385)! Experimental methods are gaining popularity in social and biological sciences, providing a more reliable approach to evidence-based research. This course introduces the essentials of experimental design, focusing on testing causal hypotheses. You will learn about causal inference, blocking, covariate adjustment, non-compliance, attrition, heterogeneous treatment effects, reproducible presentation, and research ethics. Through lectures and hands-on sessions, you will design and implement experiments, critically evaluate existing research, and improve your writing and presentation skills by creating your own experimental research project.
 
-We will meet every Monday and Wednesday from 14:30 to 15:45 in the [Maths and Science Centre - E208](https://maps.app.goo.gl/wLPSNiTSSXbizqsF8).
+We will meet every Monday and Wednesday from 14:30 to 15:45 in the [Psychology Building 250](https://maps.app.goo.gl/6kwYR7GvRiLp7oXi9). It is important to read the assigned readings before class, and make sure to check this website for updates and additional resources. If you have any questions, please feel free to contact me or the course TAs. I am here to help you succeed in this course and beyond.
 
 ## Contact Information
 
@@ -16,25 +16,26 @@ We will meet every Monday and Wednesday from 14:30 to 15:45 in the [Maths and Sc
 
 By the end of this course, students will be able to:
 
-- Use the command line interface to manage files and directories.
-- Work with version control systems to track changes in code and collaborate with others.
-- Create reproducible reports and presentations.
-- Use AI tools to assist with programming tasks.
-- Apply advanced techniques for data storage, manipulation, and querying.
-- Understand the basics of containerisation and parallel computing.
+1. Design rigorous experimental studies, including appropriate randomisation procedures and sample size calculations.
+2. Develop comprehensive pre-analysis plans (PAPs) for experimental research, demonstrating an understanding of best practices in pre-registration.
+3. Apply statistical techniques to analyse experimental data.
+4. Use Quarto to create reproducible research documents and presentations.
+5. Critically evaluate experimental designs and results, identifying potential issues and limitations.
+6. Adapt analysis strategies to address unexpected challenges in experimental data.
+7. Understand and apply ethical considerations in experimental design and analysis.
+8. Develop problem-solving skills through regular problem sets covering various aspects of experimental design and analysis.
 
 ## Website Structure
 
-This website contains the [course syllabus](https://danilofreire.github.io/qtm350/syllabus.html), [lecture materials](https://danilofreire.github.io/qtm350/lectures/lectures.html), [tutorials](https://danilofreire.github.io/qtm350/tutorials/tutorials.html), and
-[assignments](https://danilofreire.github.io/qtm350/assignments/assignments.html) for the course. The course repository at <https://github.com/danilofreire/qtm350> is similarly structured. Feel free to explore the materials and use them as needed.
+This website contains the [course syllabus](https://danilofreire.github.io/qtm385/syllabus.html), [lecture materials](https://danilofreire.github.io/qtm385/lectures.html), [guides](https://danilofreire.github.io/qtm385/guides.html), and [assignments](https://danilofreire.github.io/qtm385/assignments.html) for the course. The course repository at <https://github.com/danilofreire/qtm385> is similarly structured. Feel free to explore the materials and use them as needed.
 
 ## Getting Help
 
 If you encounter any issues with the course materials or have questions about the content, please:
 
-1. Check the [course syllabus](https://danilofreire.github.io/qtm350/syllabus.html) and this README for relevant information
-2. Review the [lecture materials](https://danilofreire.github.io/qtm350/lectures/lectures.html) and [tutorials](https://danilofreire.github.io/qtm350/tutorials/tutorials.html) in the repository
-3. Consult with your classmates or post in the [course discussion forum](https://github.com/danilofreire/qtm350/discussions)
+1. Check the [course syllabus](https://danilofreire.github.io/qtm385/syllabus.html) and this README for relevant information
+2. Review the [lecture materials](https://danilofreire.github.io/qtm385/lectures.html) and [guides](https://danilofreire.github.io/qtm385/guides.html) in the repository
+3. Consult with your classmates or post in the [course discussion forum](https://github.com/danilofreire/qtm385/discussions)
 4. Attend office hours or schedule an appointment with the instructor
 
 ## Contributing to the Repository

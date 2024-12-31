@@ -1,46 +1,9 @@
-# QTM 385 - Experimental Methods
+# Pre-Analysis Plan Guide
 
-This branch hosts the website for the course [QTM 385 - Experimental 
-Methods](http://danilofreire.github.io/qtm385) at [Emory
-University](http://www.emory.edu). The course provides an introduction to
-randomised controlled trials, including experimental design, analysis, and
-reproducibility. Please refer to the `main`
-branch of [this repository](https://github.com/danilofreire/qtm350) for the
-course materials.
+This repository contains a short guide to writing a pre-analysis plan (PAP) for empirical research. The introduction provides a brief overview of [Quarto](https://quarto.org) and [Markdown](https://www.markdownguide.org/), the tools used to create the guide. The guide includes an overview of PAPs, their importance, and the benefits of writing one. The template also includes a step-by-step guide to writing a PAP with examples and explanations.
 
-## Building the website
+To compile the PDF file, you need to install [Quarto](https://quarto.org/docs/get-started/), [Pandoc](https://pandoc.org/getting-started.html), [Libertine](https://libertine-fonts.org/), [Inconsolata](https://fonts.google.com/specimen/Inconsolata), and [TinyTex](https://yihui.org/tinytex/). If you prefer TeX Live, you can find instructions for installing it here: <https://tug.org/texlive/>.
 
-I used [Quarto](https://quarto.org) to build the website, and the process was
-quite straightforward. To keep the website organised, I created a `gh-pages`
-branch and removed all unnecessary files. Then, I converted some of the course
-materials, such as the syllabus, to `.qmd` format (Quarto Markdown) and added
-them to their respective folders. The tutorials were already in `.qmd` format,
-so I simply moved them to the `tutorials` folder and added a `tutorials.qmd`
-file to list them. Similarly, the lectures are described in the `lectures.qmd`
-file.
+[R](https://www.r-project.org/) users should install the [`quarto-r`](https://quarto-dev.github.io/quarto-r/), [`rmarkdown`](https://rmarkdown.rstudio.com/lesson-1.html), and [`kableExtra`](https://github.com/haozhu233/kableExtra) packages in addition to the [Quarto-cli](https://quarto.org/docs/get-started/).
 
-I decided to keep the Jupyter Notebooks, which will be used in the lectures,
-only in the `main` branch. This way, I encourage students to download the
-repository and follow the lectures using their local Jupyter environment.
-
-The `_quarto.yml` file contains the configuration for the website, including
-the theme, the title, and the navigation bar. The website files are in the
-`docs/` folder, as it is one of the easiest ways to host a website on GitHub. I
-also added a `.nojekyll` file to the root of the repository to prevent GitHub
-from processing the website as a Jekyll project.
-
-I then built the website with `quarto render docs/` and pushed the changes to the
-`gh-pages` branch with `git push origin gh-pages`.
-
-For further information on how to build a website with Quarto, please refer to
-<https://quarto.org/docs/websites/>.
-
-If you have any questions, please feel free to [open an
-issue](https://github.com/danilofreire/qtm385/issues) or [create a pull
-request](https://github.com/danilofreire/qtm385/pulls).
-
-## License
-
-The content of this repository is released under the [MIT
-License](LICENSE.qmd). You are free to use, modify or distribute it as long as
-you provide the attribution to the original author.
+Comments and suggestions are most welcome. Feel free to open an issue or submit a pull request. If you find the guide useful, please consider starring the repository. Thank you!

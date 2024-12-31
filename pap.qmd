@@ -4,9 +4,7 @@ title: "A Guide to Pre-Analysis Plans (PAPs)"
 
 Pre-Analysis Plans (PAPs) are detailed documents that researchers create before collecting or analysing data, outlining their intended research methodology, hypotheses, and analytical approach. These plans have become increasingly important in social and biological sciences as a tool to enhance research transparency, credibility, and reproducibility. PAPs serve as a roadmap for researchers, helping them think through their study design and analysis strategy in advance, while also providing a public record of their intentions.
 
-The use of PAPs has grown significantly in recent years, particularly in fields such as economics, political science, and psychology. According to the American Economic Association's website, as of 2024, the AEA RCT Registry currently lists 8,937 studies with locations in 169 countries[^aer]. This trend reflects a growing recognition of the importance of research transparency and the need to address issues such as publication bias and p-hacking.
-
-[^aer]: See: <https://www.socialscienceregistry.org/>. Access: July 2024.
+The use of PAPs has grown significantly in recent years, particularly in fields such as economics, political science, and psychology. According to the American Economic Association's website, as of 2024, the [AEA RCT Registry](https://www.socialscienceregistry.org/) currently lists about 10,000 studies with locations in 169 countries. This trend reflects a growing recognition of the importance of research transparency and the need to address issues such as publication bias and p-hacking.
 
 # Purpose and Benefits of PAPs
 
