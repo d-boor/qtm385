@@ -12,7 +12,7 @@ Required readings:
 
 - Syllabus and course website: <http://danilofreire.github.io/qtm385>.
 - GitHub repository: <https://github.com/danilofreire/qtm385>.
-- Lecture slides: Welcome to QTM 385: Introduction / Why Experiments?.
+- Lecture slides: [Welcome to QTM 385: Introduction / Why Experiments?](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-01/01-introduction.html)
 - FEDAI: Chapter 01: Introduction.
 
 Weekly suggested readings:
