@@ -9,6 +9,7 @@ Below you will find a list of available guides for QTM 385. These guides are des
 - [Markdown Guide](markdown.qmd): An introduction to Markdown, a lightweight markup language with plain text formatting syntax.
 - [Quarto Guide](quarto.qmd): An introduction to Quarto, a document authoring system that supports Markdown, LaTeX, R, Python, and more.
 - [PAP Guide](pap.qmd): A guide to creating pre-analysis plans (PAPs) for experimental research.
+- [EGAP Research Design Form](design-form.qmd): A guide to help you think through the key components of your research design. Source: [EGAP](https://egap.github.io/learningdays-resources/Exercises/design-form.html).
 
 ## Additional Resources
 
