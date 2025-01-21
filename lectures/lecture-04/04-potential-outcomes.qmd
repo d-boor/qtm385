@@ -1,0 +1,109 @@
+## Slide 1: The Fundamental Problem of Causal Inference
+
+- Let $Y_i(1)$ and $Y_i(0)$ represent the potential outcomes for unit $i$ under treatment and control
+- Individual treatment effect: $\tau_i = Y_i(1) - Y_i(0)$
+- Fundamental problem: We can never observe both potential outcomes for the same unit
+- Average Treatment Effect (ATE): $\tau = E[Y_i(1) - Y_i(0)]$
+- Random assignment enables estimation: $\hat{\tau} = E[Y|T=1] - E[Y|T=0]$
+- Stable Unit Treatment Value Assumption (SUTVA): No interference and no hidden variations
+- Example: Drug efficacy requires comparing same patient's health with/without treatment
+- Missing data perspective: Causal inference as imputation of counterfactuals
+
+## Slide 2: Average Treatment Effect (ATE) Estimation
+
+- Formal definition: $\tau = E[Y(1) - Y(0)]$
+- Observed difference: $\tau_{naive} = E[Y|T=1] - E[Y|T=0]$
+- Bias decomposition: $\tau_{naive} = \tau + (E[Y(0)|T=1] - E[Y(0)|T=0])$
+- Unconfoundedness assumption: $(Y(1), Y(0)) \perp T | X$
+- Propensity score: $e(X) = P(T=1|X)$
+- Inverse Probability Weighting: $\hat{\tau}_{IPW} = \frac{1}{N}\sum\left[\frac{TY}{e(X)} - \frac{(1-T)Y}{1-e(X)}\right]$
+- Doubly robust estimator: Combines outcome model and propensity score
+- Variance estimation challenges with IPW
+
+## Slide 3: Observational Studies vs Randomized Experiments
+
+- RCT gold standard: Balances covariates through random assignment
+- Observational study challenges: $E[Y(0)|T=1] \neq E[Y(0)|T=0]$
+- Confounding bias: $\tau_{biased} = \tau + \beta\delta$ (omitted variable formula)
+- Directed Acyclic Graphs (DAGs): Visualize causal relationships
+- Backdoor path criterion: Condition on variables blocking non-causal paths
+- Collider bias: Conditioning on common effects introduces spurious associations
+- Sensitivity analysis: Quantify impact of unobserved confounders
+- Rosenbaum bounds: $\Gamma$ measures departure from random assignment
+
+## Slide 4: Counterfactual Framework
+
+- Counterfactual definition: $Y_i(t)$ outcome under treatment $t$
+- Structural Causal Model: $Y = f(T, U)$ with $U$ representing unobserved variables
+- do-operator: $P(Y|do(T=t))$ vs $P(Y|T=t)$
+- Mediation formula: $\text{Total Effect} = \text{Direct} + \text{Indirect}$
+- Pearl's causal hierarchy: Association $\to$ Intervention $\to$ Counterfactuals
+- Backdoor adjustment: $P(Y|do(T)) = \sum_X P(Y|T,X)P(X)$
+- Frontdoor criterion: Valid when unobserved confounders exist
+- Example: Smoking ($T$) $\to$ Tar ($M$) $\to$ Cancer ($Y$) with $U$ (genetics)
+
+## Slide 5: Causal Graphs and Identification
+
+- Nodes represent variables, edges direct causal effects
+- d-separation: $X \perp Y | Z$ if $Z$ blocks all paths between $X$ and $Y$
+- Minimal sufficient adjustment set: Smallest $Z$ for identification
+- Confounding path example: $T \leftarrow X \rightarrow Y$
+- Collider example: $T \rightarrow X \leftarrow Y$ creates dependence
+- do-calculus rules: Formal operations for causal identification
+- Transport formula: $P(Y|do(T), S=1) = \sum_{X} P(Y|do(T),X)P(X|S=1)$
+- Selection bias: Conditioning on colliders in sample selection
+
+## Slide 6: Propensity Score Methods
+
+- Propensity score definition: $e(X) = P(T=1|X)$
+- Balancing property: $T \perp X | e(X)$
+- Matching estimator: $\hat{\tau}_{match} = \frac{1}{N_1} \sum_{i:T_i=1} (Y_i - Y_{j(i)})$
+- Inverse Probability Weighting (IPW): $\hat{\tau}_{IPW} = \frac{1}{N}\sum \left[\frac{TY}{e(X)} - \frac{(1-T)Y}{1-e(X)}\right]$
+- Doubly robust estimator: $\hat{\tau}_{DR} = \frac{1}{N}\sum\left[\hat{\mu}_1(X) - \hat{\mu}_0(X) + \frac{T(Y-\hat{\mu}_1(X))}{e(X)} - \frac{(1-T)(Y-\hat{\mu}_0(X))}{1-e(X)}\right]$
+- Overlap assumption: $0 < e(X) < 1$ for all $X$
+- Caliper matching: Restrict matches within propensity score distance
+- Machine learning estimation: Cross-fitting for propensity scores
+
+## Slide 7: Instrumental Variables
+
+- IV requirements: Relevance ($Z \not\perp T$), Exclusion ($Z \perp Y|T,X$), Independence ($Z \perp U$)
+- Two-stage least squares (2SLS): $T = \gamma Z + \delta X + \eta$, $Y = \hat{T}\beta + X\theta + \epsilon$
+- Wald estimator: $\tau_{WALD} = \frac{E[Y|Z=1] - E[Y|Z=0]}{E[T|Z=1] - E[T|Z=0]}$
+- Local Average Treatment Effect (LATE): Effect for compliers
+- Monotonicity: $T_i(1) \geq T_i(0)\ \forall i$
+- Weak instruments: $F < 10$ indicates potential bias
+- Overidentification test: $J = N \times R^2 \sim \chi^2_{m-k}$
+- Example: Distance to college as IV for education on earnings
+
+## Slide 8: Difference-in-Differences (DiD)
+
+- Basic model: $Y_{it} = \alpha_i + \gamma_t + \tau D_{it} + \epsilon_{it}$
+- Parallel trends: $E[Y_{i1}(0) - Y_{i0}(0)|D=1] = E[Y_{i1}(0) - Y_{i0}(0)|D=0]$
+- Event study specification: $Y_{it} = \alpha_i + \gamma_t + \sum_{k=-K}^L \tau_k 1\{t = k\} + \epsilon_{it}$
+- Staggered adoption: Sun and Abraham estimator
+- Bacon decomposition: $\tau = \sum_{g,t} w_{gt} \tau_{gt}$
+- Synthetic control: $Y_{1t} - \sum_{j=2}^{J+1} w_j Y_{jt}$
+- Pre-trend test: $\tau_k = 0$ for $k < 0$
+- Honest DID: Robust inference under treatment timing variation
+
+## Slide 9: Regression Discontinuity (RD)
+
+- Sharp RD: $T_i = 1\{X_i \geq c\}$
+- Fuzzy RD: $\lim_{x \downarrow c} E[T|X=x] \neq \lim_{x \uparrow c} E[T|X=x]$
+- Continuity: $E[Y(0)|X]$ and $E[Y(1)|X]$ continuous at $c$
+- Local linear regression: $\min \sum K(\frac{X_i - c}{h})[Y_i - \alpha - \beta(X_i - c) - \tau T_i]^2$
+- Bandwidth selection: Cross-validation or MSE-optimal
+- McCrary test: Check for manipulation density discontinuity
+- Covariate balance: Test $E[X|T]$ continuity at cutoff
+- Donut hole RD: Exclude observations immediately around cutoff
+
+## Slide 10: Sensitivity Analysis
+
+- Rosenbaum bound: $\Gamma = \frac{P(T=1|X)/P(T=0|X)}{P(T=1|X')/P(T=0|X')} \leq \Gamma$
+- E-value: Minimum strength of confounder needed to explain away effect
+- Oster's $\delta$: Proportion of selection on observables vs unobservables
+- Breakdown point: Minimum $R^2$ needed to nullify effect
+- Bayesian sensitivity: Prior distributions for unobserved confounding
+- Magnitude scaling: $\tau_{adjusted} = \tau/(1 - R^2_{Y\sim U|T,X})$
+- Stress testing: Vary assumptions systematically
+- Transparent reporting: Include sensitivity analysis in all observational studies
