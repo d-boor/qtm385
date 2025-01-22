@@ -263,14 +263,14 @@
     "href": "assignments.html",
     "title": "Assignments",
     "section": "",
-    "text": "Here you will find information about the assignments for QTM 385. There are ten of them, each worth 5% of your final grade. The assignments are designed to help you practice the concepts covered in class and to develop your data science skills.\nAssignment submissions are typically due on Wednesdays at 11:59pm in the week following their publication. You may submit via Canvas (preferred) or email (danilo.freire@emory.edu).\nI encourage you to complete assignments in Quarto or Jupyter Notebooks and submit them in html format (just because they are easier to read on Canvas). PDF is also absolutely fine. You can also submit them as a Word document, provided that code and results are included in the same document.\nYou will find the questions in the assignments folder on the course repository. You can also access them through the links below.\nWhen submitting, please name your files as follows: assignment-01-your-name.pdf. For instance: assignment-01-john-doe.pdf."
+    "text": "Here you will find information about the assignments for QTM 385. There are ten of them, each worth 5% of your final grade. The assignments are designed to help you practice the concepts covered in class and to develop your data science skills.\nAssignment submissions are typically due on Wednesdays at 11:59pm in the week following their publication. You may submit via Canvas (preferred) or email (danilo.freire@emory.edu).\nI encourage you to complete assignments in Quarto or Jupyter Notebooks and submit them in html or PDF format (just because they are easier to read on Canvas). You can also submit them as a Word document, provided that code and results are included in the same document. The assignment folders contain the questions in many formats, including .qmd, .ipynb, and .docx, so you can use them as templates.\nYou will find the questions in the assignments folder on the course repository. You can also access them through the links below."
   },
   {
     "objectID": "assignments.html#assignment-timeline",
     "href": "assignments.html#assignment-timeline",
     "title": "Assignments",
     "section": "Assignment Timeline",
-    "text": "Assignment Timeline\nTBW"
+    "text": "Assignment Timeline\n\n\n\nAssignment\nTopic\nDue Date\nLink\n\n\n\n\n1\nTheory\n29 Jan\nAssignment 1"
   },
   {
     "objectID": "assignments.html#pre-analysis-plan",

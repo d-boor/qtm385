@@ -6,15 +6,15 @@ Here you will find information about the assignments for QTM 385. There are ten 
 
 Assignment submissions are typically due on Wednesdays at 11:59pm in the week following their publication. You may submit via Canvas (preferred) or email (<danilo.freire@emory.edu>).
 
-I encourage you to complete assignments in Quarto or Jupyter Notebooks and submit them in html format (just because they are easier to read on Canvas). PDF is also absolutely fine. You can also submit them as a Word document, provided that code and results are included in the same document.
+I encourage you to complete assignments in Quarto or Jupyter Notebooks and submit them in html or PDF format (just because they are easier to read on Canvas). You can also submit them as a Word document, provided that code and results are included in the same document. The assignment folders contain the questions in many formats, including `.qmd`, `.ipynb`, and `.docx`, so you can use them as templates.
 
 You will find the questions in the `assignments` folder on [the course repository](https://github.com/danilofreire/qtm385/tree/main/assignments). You can also access them through the links below.
 
-When submitting, please name your files as follows: `assignment-01-your-name.pdf`. For instance: `assignment-01-john-doe.pdf`.
-
 ## Assignment Timeline
 
-TBW
+| Assignment | Topic | Due Date | Link |
+|------------|-------|----------|------|
+| 1          | Theory | 29 Jan | [Assignment 1](https://github.com/danilofreire/qtm385/blob/main/assignments/01-assignment) |
 
 ## Pre-Analysis Plan
 

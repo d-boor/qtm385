@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.57">
+<meta name="generator" content="quarto-1.6.40">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -34,12 +34,12 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-8ea72dc5fed832574809a9c94082fbbb.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-a202ed359b7240dcab911ed64cbd0efc.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-fc69c27516b785ffb5db61c6a6e66aa6.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -165,12 +165,28 @@ ul.task-list li input[type="checkbox"] {
 
 <p>Here you will find information about the assignments for QTM 385. There are ten of them, each worth 5% of your final grade. The assignments are designed to help you practice the concepts covered in class and to develop your data science skills.</p>
 <p>Assignment submissions are typically due on Wednesdays at 11:59pm in the week following their publication. You may submit via Canvas (preferred) or email (<a href="mailto:danilo.freire@emory.edu" class="email">danilo.freire@emory.edu</a>).</p>
-<p>I encourage you to complete assignments in Quarto or Jupyter Notebooks and submit them in html format (just because they are easier to read on Canvas). PDF is also absolutely fine. You can also submit them as a Word document, provided that code and results are included in the same document.</p>
+<p>I encourage you to complete assignments in Quarto or Jupyter Notebooks and submit them in html or PDF format (just because they are easier to read on Canvas). You can also submit them as a Word document, provided that code and results are included in the same document. The assignment folders contain the questions in many formats, including <code>.qmd</code>, <code>.ipynb</code>, and <code>.docx</code>, so you can use them as templates.</p>
 <p>You will find the questions in the <code>assignments</code> folder on <a href="https://github.com/danilofreire/qtm385/tree/main/assignments">the course repository</a>. You can also access them through the links below.</p>
-<p>When submitting, please name your files as follows: <code>assignment-01-your-name.pdf</code>. For instance: <code>assignment-01-john-doe.pdf</code>.</p>
 <section id="assignment-timeline" class="level2">
 <h2 class="anchored" data-anchor-id="assignment-timeline">Assignment Timeline</h2>
-<p>TBW</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Assignment</th>
+<th>Topic</th>
+<th>Due Date</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Theory</td>
+<td>29 Jan</td>
+<td><a href="https://github.com/danilofreire/qtm385/blob/main/assignments/01-assignment">Assignment 1</a></td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="pre-analysis-plan" class="level2">
 <h2 class="anchored" data-anchor-id="pre-analysis-plan">Pre-Analysis Plan</h2>
@@ -410,8 +426,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -522,7 +536,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
