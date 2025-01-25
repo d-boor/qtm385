@@ -155,6 +155,7 @@ Required readings:
 - Lecture slides: Potential Outcomes Framework.
 - FEDAI: Chapter 02: Causal Inference and Experimentation.
 - Rubin, D. B. (2005). [Causal Inference using Potential Outcomes: Design, Modeling, Decisions](https://www.tandfonline.com/doi/abs/10.1198/016214504000001880). Journal of the American Statistical Association, 100(469), 322-331.
+- [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=c6a69c01-0bb4-4e2a-aca1-60e0f11fdb5b&hostId=05eb977d-4f8a-440e-9e45-95212b29d103)
 
 ### Lecture 04: Selection Bias and Randomisation (January 29)
 
