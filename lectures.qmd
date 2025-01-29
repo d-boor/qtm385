@@ -53,7 +53,7 @@ Required readings:
 - Lecture slides: [Potential Outcomes Continued and Regression Analysis](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-04/04-selection-bias.html).
 - Angrist, J. D., & Pischke, J. S. (2014). [Mastering 'Metrics: The Path from Cause to Effect](https://assets.press.princeton.edu/chapters/s10363.pdf). Princeton University Press. Chapter 01: Randomized Trials. The appendix is worth reading as well.
 - Problem Set 01 due.
-- Problem Set 02 assigned.
+- [Problem Set 02 assigned](https://github.com/danilofreire/qtm385/blob/main/assignments/02-assignment).
 
 Weekly suggested readings:
 
@@ -258,40 +258,4 @@ Weekly suggested readings:
 ### Lecture 22: Texts for discussion
 
 - Druckman, J. N., Gilli, M., Klar, S., & Robison, J. (2015). [Measuring drug and alcohol use among college student‐athletes.](https://onlinelibrary.wiley.com/doi/abs/10.1111/ssqu.12135) Social Science Quarterly, 96(2), 369-380.
-- Freire, D., & Skarbek, D. (2023). [Vigilantism and institutions: Understanding attitudes toward lynching in Brazil.](https://journals.sagepub.com/doi/full/10.1177/20531680221150389) Research & Politics, 10(1), 20531680221150389.
-- TBD
-- Problem Set 10 due.
-
-## Week 13: Discussion of Final Projects and Meta-Analysis
-
-### Lecture 23: Discussion of Final Projects
-
-- Roundtable on pre-analysis plans (no readings required)
-
-Weekly suggested readings:
-
-- Aronow, Peter M., Alexander Coppock, Forrest W. Crawford, and Donald P. Green. [Combining list experiment and direct question estimates of sensitive behavior prevalence.](https://academic.oup.com/jssam/article-abstract/3/1/43/915561?login=false) Journal of Survey Statistics and Methodology 3, no. 1 (2015): 43-66.
-- Traunmüller, R., Kijewski, S., & Freitag, M. (2019). [The silent victims of sexual violence during war: Evidence from a list experiment in Sri Lanka.](https://journals.sagepub.com/doi/abs/10.1177/0022002719828053) Journal of Conflict Resolution, 63(9), 2015-2042.
-- Coppock, A., & McClellan, O. A. (2019). [Validating the demographic, political, psychological, and experimental results obtained from a new source of online survey respondents.](https://journals.sagepub.com/doi/full/10.1177/2053168018822174) Research & politics, 6(1), 2053168018822174.
-
-### Lecture 24: Meta-Analysis
-
-- Lecture slides: Meta-Analysis.
-- FEDAI: Chapter 11: Integration of Research Findings.
-- EGAP: [External Validity](https://egap.org/resource/10-things-to-know-about-external-validity/).
-- Problem Set 10 due.
-
-### Lecture 25: Guidelines for Experiments
-
-- Lecture slides: Guidelines for Experiments.
-- FEDAI: Chapters 12 and 13.
-
-## Week 14 - Discussion of Final Projects
-
-### Lecture 26: Review and Final Project Discussion
-
-- Roundtable on final projects (no readings required)
-
-### Lecture 27: Final Project Presentations
- 
-- Final project presentations (no readings required)
+- Freire, D., & Skarbek, D. (2023). [Vigilantism and institutions: Understanding attitudes toward lynching in Brazil.](https://journals.sagepub.com/doi/full/10.1177/20531680

@@ -15,6 +15,7 @@ You will find the questions in the `assignments` folder on [the course repositor
 | Assignment | Topic | Due Date | Link |
 |------------|-------|----------|------|
 | 1          | Theory | 29 Jan | [Assignment 1](https://github.com/danilofreire/qtm385/blob/main/assignments/01-assignment) |
+| 2          | Potential Outcomes | 5 Feb | [Assignment 2](https://github.com/danilofreire/qtm385/blob/main/assignments/02-assignment) |
 
 ## Pre-Analysis Plan
 
