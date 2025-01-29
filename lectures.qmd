@@ -33,7 +33,7 @@ Required readings:
 - Lecture slides: [The Research Design Process: Testing Theories with Experiments](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-02/02-design.html).
 - Blair, G., Cooper, J., Coppock, A., & Humphreys, M. (2019). [Declaring and Diagnosing Research Designs](https://doi.org/10.1017/S0003055419000194). American Political Science Review, 113(3), 838-859.
 - Card, D., DellaVigna, S., & Malmendier, U. (2011). [The Role of Theory in Field Experiments](https://pubs.aeaweb.org/doi/pdf/10.1257%2Fjep.25.3.39). Journal of Economic Perspectives, 25(3), 39-62.
-- Problem Set 01 assigned.
+- [Problem Set 01 assigned](https://github.com/danilofreire/qtm385/blob/main/assignments/01-assignment).
 
 ## Week 03: Potential Outcomes Framework
 
@@ -52,6 +52,7 @@ Required readings:
 
 - Lecture slides: [Potential Outcomes Continued and Regression Analysis](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-04/04-selection-bias.html).
 - Angrist, J. D., & Pischke, J. S. (2014). [Mastering 'Metrics: The Path from Cause to Effect](https://assets.press.princeton.edu/chapters/s10363.pdf). Princeton University Press. Chapter 01: Randomized Trials. The appendix is worth reading as well.
+- [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=8fba8529-e672-4116-8a74-23f78df26cb1&hostId=05eb977d-4f8a-440e-9e45-95212b29d103)
 - Problem Set 01 due.
 - [Problem Set 02 assigned](https://github.com/danilofreire/qtm385/blob/main/assignments/02-assignment).
 
