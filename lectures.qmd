@@ -76,9 +76,11 @@ Weekly suggested readings:
 
 ### Lecture 06: Texts for discussion (February 05)
 
+- Lecture slides: [Texts for Discussion](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-06/06-discussion.html).
 - Kalla, J. & D. Broockman. 2016. [Campaign Contributions Facilitate Access to Congressional Officials: A Randomized Field Experiment](https://onlinelibrary.wiley.com/doi/full/10.1111/ajps.12180). American Journal of Political Science, 60(3): 545–558
 - Chattopadhyay, R., & Duflo, E. (2004). [Women as policy makers: Evidence from a randomized policy experiment in India](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1468-0262.2004.00539.x). Econometrica, 72(5), 1409-1443.
 - Shrout, P. E., & Rodgers, J. L. (2018). [Psychology, science, and knowledge construction: Broadening perspectives from the replication crisis](https://www.annualreviews.org/content/journals/10.1146/annurev-psych-122216-011845). Annual Review of Psychology, 69(1), 487-510.
+- [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=4a2aabf9-86a7-4041-9a7a-77dc08e13e32&hostId=05eb977d-4f8a-440e-9e45-95212b29d103)
 - Problem Set 02 due.
 - Problem Set 03 assigned.
 
