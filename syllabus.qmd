@@ -193,15 +193,16 @@ Required readings:
 
 Required readings:
 
-- Lecture slides: Potential Outcomes Continued: Selection Bias and Randomisation.
+- Lecture slides: [Potential Outcomes Continued and Regression Analysis](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-04/04-selection-bias.html).
 - Angrist, J. D., & Pischke, J. S. (2014). [Mastering 'Metrics: The Path from Cause to Effect](https://assets.press.princeton.edu/chapters/s10363.pdf). Princeton University Press. Chapter 01: Randomized Trials. The appendix is worth reading as well.
-- Hernán, M. A., Hernández-Díaz, S., & Robins, J. M. (2004). [A Structural Approach to Selection Bias](https://journals.lww.com/epidem/fulltext/2004/09000/Causation_of_Bias__The_Episcope.00020.aspx). Epidemiology, 15(5), 615-625.
 - Problem Set 01 due.
 - Problem Set 02 assigned.
 
 Weekly suggested readings:
 
 - Imbens, G. W., & Rubin, D. B. (2015). [Causal Inference for Statistics, Social, and Biomedical Sciences: An Introduction](https://www.cambridge.org/core/books/causal-inference-for-statistics-social-and-biomedical-sciences/71126BE90C58F1A431FE9B2DD07938AB). Cambridge University Press. Part I - Introduction.
+- Elwert, F., & Winship, C. (2014). [Endogenous Selection Bias: The Problem of Conditioning on a Collider Variable](https://www.jstor.org/stable/24571264). Annual Review of Sociology, 40, 31-53.
+- Hernán, M. A., Hernández-Díaz, S., & Robins, J. M. (2004). [A Structural Approach to Selection Bias](https://journals.lww.com/epidem/fulltext/2004/09000/Causation_of_Bias__The_Episcope.00020.aspx). Epidemiology, 15(5), 615-625.
 - Hernán M.A. & Robins J.M. (2020). [Causal Inference: What If](https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/). Boca Raton: Chapman & Hall/CRC. Chapters 6-10. Maths-heavy but very insightful.
 - Morgan, S. L., & Winship, C. (2015). [Counterfactuals and Causal Inference: Methods and Principles for Social Research](https://www.cambridge.org/core/books/counterfactuals-and-causal-inference/5CC81E6DF63C5E5A8B88F79D45E1D1B7). Cambridge University Press. Chapter 02: Counterfactuals and Potential Outcomes Model.
 - Holland, P. W. (1986). [Statistics and Causal Inference](https://www.jstor.org/stable/2289064). Journal of the American Statistical Association, 81(396), 945-960.
@@ -210,16 +211,19 @@ Weekly suggested readings:
 
 ### Lecture 05: Statistical Inference for Randomised Experiments (February 03)
 
+- Lecture slides: [Sampling Distributions, Statistical Inference, and Hypothesis Testing](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-05/05-hypothesis-testing.html).
 - FEDAI: Chapter 03: Sampling Distributions, Statistical Inference, and Hypothesis Testing.
 - EGAP Methods Guides: [Hypothesis Testing](https://egap.org/resource/10-things-to-know-about-hypothesis-testing/), [Randomisation Inference](https://egap.org/resource/10-things-to-know-about-randomization-inference/), and [Cluster Randomisation](https://egap.org/resource/10-things-to-know-about-cluster-randomization/). These short guides provide a good overview of the topics we will cover in class, as well as example code in `R`.
-
+- [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=2ff88efc-8164-446d-a088-bcd4d4fe5313&hostId=05eb977d-4f8a-440e-9e45-95212b29d103).
+ 
 ### Lecture 06: Texts for discussion (February 05)
 
+- Lecture slides: [Texts for Discussion](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-06/06-discussion.html).
 - Kalla, J. & D. Broockman. 2016. [Campaign Contributions Facilitate Access to Congressional Officials: A Randomized Field Experiment](https://onlinelibrary.wiley.com/doi/full/10.1111/ajps.12180). American Journal of Political Science, 60(3): 545–558
+- Bertrand, M., & Mullainathan, S. (2004). [Are Emily and Greg more employable than Lakisha and Jamal? A field experiment on labor market discrimination](https://www.aeaweb.org/articles?id=10.1257%2F0002828042002561&ref=exo-insight). American economic review, 94(4), 991-1013.
 - Chattopadhyay, R., & Duflo, E. (2004). [Women as policy makers: Evidence from a randomized policy experiment in India](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1468-0262.2004.00539.x). Econometrica, 72(5), 1409-1443.
-- Shrout, P. E., & Rodgers, J. L. (2018). [Psychology, science, and knowledge construction: Broadening perspectives from the replication crisis](https://www.annualreviews.org/content/journals/10.1146/annurev-psych-122216-011845). Annual Review of Psychology, 69(1), 487-510.
 - Problem Set 02 due.
-- Problem Set 03 assigned.
+- [Problem Set 03 assigned](https://github.com/danilofreire/qtm385/tree/main/assignments/03-assignment).
 
 Weekly suggested readings:
 
