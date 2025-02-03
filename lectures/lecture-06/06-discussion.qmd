@@ -1,0 +1,85 @@
+---
+title: QTM 385 - Experimental Methods
+subtitle: Lecture 06 - Texts for Discussion and More
+author:
+  - name: Danilo Freire
+    email: danilo.freire@emory.edu
+    affiliations: Emory University
+format:
+  clean-revealjs:
+    self-contained: true
+    code-overflow: wrap
+    footer: "[Discussion](https://raw.githack.com/danilofreire/qtm385/main/lectures/lecture-06/06-discussion.html)"
+transition: slide
+transition-speed: default
+scrollable: true
+engine: knitr
+revealjs-plugins:
+  - multimodal
+editor:
+  render-on-save: true
+---
+
+# Hi, there! 👋 <br> Tudo bem? 😄🇧🇷 {background-color="#2d4563"}
+
+# Brief recap 📚 {background-color="#2d4563"}
+
+## Last time, we saw that...
+
+:::{style="margin-top: 30px; font-size: 26px;"}
+- [Regression in R]{.alert}: Covered adding [covariates]{.alert} with `lm_lin()`, [centring]{.alert}, and sub-group analysis with [interaction terms]{.alert} using `lm_robust`.
+- [Hypothesis Testing]{.alert}: Covered different types of null hypotheses: sharp null and null hypothesis of no average treatment effect; confidence intervals, type I and type II errors
+- Statistical concept of [sampling variability]{.alert}, how it relates to sampling distributions, and how it affects the interpretation of experimental estimates
+- [Randomisation Inference]{.alert}: Introduced, with the `ri2` package, which uses the `randomizr` package.
+- Demonstrated RI with two examples, including one about [female council heads]{.alert} and the other about [runoff elections]{.alert}.
+- [Real Experiment]{.alert}: Analysed a paper using linear regression models as well as Randomisation Inference
+:::
+
+## Today, we will...
+:::{style="margin-top: 50px; font-size: 24px;"}
+- Talk a bit about `R` and the packages we have seen so far
+- Discuss the next steps of your pre-analysis plan and the final project
+- Discuss three papers 
+  - Kalla, J. & D. Broockman. 2016. [Campaign Contributions Facilitate Access to Congressional Officials: A Randomized Field Experiment](https://onlinelibrary.wiley.com/doi/full/10.1111/ajps.12180). American Journal of Political Science, 60(3): 545–558
+  - Chattopadhyay, R., & Duflo, E. (2004). [Women as policy makers: Evidence from a randomized policy experiment in India](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1468-0262.2004.00539.x). Econometrica, 72(5), 1409-1443.
+  - Shrout, P. E., & Rodgers, J. L. (2018). [Psychology, science, and knowledge construction: Broadening perspectives from the replication crisis](https://www.annualreviews.org/content/journals/10.1146/annurev-psych-122216-011845). Annual Review of Psychology, 69(1), 487-510.
+- [But first...]{.alert}, let's talk about your group work
+:::
+
+## Group Work 🤝
+### What I have in mind...
+
+:::{style="margin-top: 30px; font-size: 22px;"}
+- Now that you have your groups, I'd like you to start working on your pre-analysis plan
+- I'll give you some time to discuss your ideas and start writing your plan
+- My plan is that you should slowly think about your final project, one step at a time
+- What do you think about having two weeks to write the following:
+  - Submit at most 2 paragraphs summarising an experiment that you want to develop in this course. At minimum, your summary should include a research question, why the question is important, and a rough sketch of how you plan to answer the question.
+- In three weeks:
+  - Write a title and abstract for a paper you imagine writing based on your proposed experiment. Assume that your findings align with your theoretical predictions. Remember to establish why the findings matter for your intended audience.
+- In four weeks:
+  - Outline your pre-analysis plan. Your outline should include sections on the research question, the experimental design, the data you will collect, and the analysis you will conduct. 
+:::
+
+## What I have in mind...
+
+:::{style="margin-top: 30px; font-size: 21px;"}
+- In five weeks:
+  - Use `Quarto` and `DeclareDesign` to write your report and simulate your experiment
+- In six weeks:
+  - Revised outline, now including a new section titled "Potential Threats." In this section, diagnose threats and briefly describe potential countermeasures. This new section should discuss false positives, statistical power, demand effects, noncompliance, spillover, and attrition.
+- In seven weeks:
+  - Revised outline, now included a new section on "Heterogeneous Treatment Effects." In this section, discuss how you might explore heterogeneity in treatment effects. This section should include a discussion of how you might use covariates to explore heterogeneity.
+- In eight weeks:
+  - I will give you feedback on your outline and provide you with the simulated data for your experiment.
+  - You will have two weeks to write your final report.
+- Last week of class:
+  - You will present your findings to the class.
+:::
+
+# R packages 📦 {background-color="#2d4563"}
+### `fabricatr`
+
+:::{style="margin-top: 30px; font-size: 23px;"}
+- `fabricatr` is a package that helps you simulate data for your experiments
+:::
